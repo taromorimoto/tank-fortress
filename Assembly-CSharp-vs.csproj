@@ -46,6 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AimController.cs" />
+     <Compile Include="Assets\Scripts\BulletController.cs" />
+     <Compile Include="Assets\Scripts\CannonController.cs" />
      <Compile Include="Assets\Scripts\PlayerControl.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
