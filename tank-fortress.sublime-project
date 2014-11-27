@@ -8,6 +8,10 @@
 		{
 			"follow_symlinks": true,
 			"path": "/Users/taro/projects/paratroopers/Assets/Scripts"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/taro/projects/paratroopers"
 		}
 	]
 }

@@ -7,7 +7,7 @@ public class BulletController : MonoBehaviour {
     public float ageAfterHit = 0.1f;
 
 	void Start () {
-	
+		rigidbody.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
 	}
 	
 	void Update () {
