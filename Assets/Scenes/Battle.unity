@@ -679,7 +679,7 @@ MonoBehaviour:
   launchPoint: {fileID: 182610940}
   bullet: {fileID: 100002, guid: 53c833ab1991c4f75a479cc3fe7e163f, type: 2}
   bulletVelocity: 400
-  rateOfFire: .100000001
+  cooldownMax: 1
 --- !u!23 &1241633562
 Renderer:
   m_ObjectHideFlags: 0
@@ -1219,7 +1219,7 @@ MonoBehaviour:
   launchPoint: {fileID: 1556038423}
   bullet: {fileID: 100002, guid: 53c833ab1991c4f75a479cc3fe7e163f, type: 2}
   bulletVelocity: 400
-  rateOfFire: .100000001
+  cooldownMax: 1
 --- !u!1 &1538461230
 GameObject:
   m_ObjectHideFlags: 0

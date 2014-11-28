@@ -6,23 +6,27 @@ public class CannonController : MonoBehaviour {
     public Transform launchPoint;
 	public GameObject bullet;
     public float bulletVelocity = 1000;
-    public float rateOfFire = 0.1f;
-
+	public float cooldownMax = 1.0f;
+	
     float lastShot = 0;
-
+	float cooldown = 1.0f;
+	
 	void Start () {
 	
 	}
 	
 	void Update () {
-        lastShot += Time.deltaTime;
+        cooldown += Time.deltaTime;
+        if (cooldown > cooldownMax) {
+			cooldown = cooldownMax;
+        }
 
         bool fireKeyDown = Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.UpArrow);
 
         if (fireKeyDown) {
-            if (lastShot > rateOfFire) {
+            if (cooldown == cooldownMax) {
                 Fire();
-                lastShot = 0;
+                cooldown = 0;
             }
         }		
 	
