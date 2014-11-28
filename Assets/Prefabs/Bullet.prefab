@@ -31,7 +31,7 @@ GameObject:
   - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,7 +95,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   serializedVersion: 2
-  m_Mass: .310000002
+  m_Mass: .200000003
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -161,8 +161,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a72eec0dc054573b8634d83147980c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 30
   age: 1
-  ageAfterHit: .100000001
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

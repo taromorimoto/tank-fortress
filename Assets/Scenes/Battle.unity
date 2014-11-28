@@ -243,7 +243,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: f513ab986200d4b26a15ce072a3feb1c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 19.6499996
+      value: 14.8629999
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f513ab986200d4b26a15ce072a3feb1c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -251,7 +251,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f513ab986200d4b26a15ce072a3feb1c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 20.3999996
+      value: 21.8430004
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f513ab986200d4b26a15ce072a3feb1c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -280,6 +280,10 @@ Prefab:
     - target: {fileID: 100002, guid: f513ab986200d4b26a15ce072a3feb1c, type: 2}
       propertyPath: m_Name
       value: PlayerFortress
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: f513ab986200d4b26a15ce072a3feb1c, type: 2}
+      propertyPath: m_TagString
+      value: Fortress
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f513ab986200d4b26a15ce072a3feb1c, type: 2}
@@ -363,10 +367,11 @@ GameObject:
   - 23: {fileID: 1099162623}
   - 54: {fileID: 1099162622}
   - 114: {fileID: 1099162621}
+  - 114: {fileID: 1099162627}
   - 114: {fileID: 1099162620}
   m_Layer: 0
   m_Name: EnemyFortress
-  m_TagString: Untagged
+  m_TagString: Fortress
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -469,6 +474,19 @@ Transform:
   - {fileID: 358698152}
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!114 &1099162627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400008, guid: f513ab986200d4b26a15ce072a3feb1c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1358031320}
+  m_GameObject: {fileID: 1099162619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca7ca6cae248a46558354012bd455bbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &1176480365
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,7 +678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   launchPoint: {fileID: 182610940}
   bullet: {fileID: 100002, guid: 53c833ab1991c4f75a479cc3fe7e163f, type: 2}
-  bulletVelocity: 1000
+  bulletVelocity: 400
   rateOfFire: .100000001
 --- !u!23 &1241633562
 Renderer:
@@ -787,9 +805,10 @@ GameObject:
   - 54: {fileID: 1305923136}
   - 114: {fileID: 1431724377}
   - 114: {fileID: 1305923141}
+  - 114: {fileID: 1305923142}
   m_Layer: 0
   m_Name: PlayerFortress
-  m_TagString: Untagged
+  m_TagString: Fortress
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -859,7 +878,7 @@ Transform:
   m_PrefabInternal: {fileID: 748052825}
   m_GameObject: {fileID: 1305923135}
   m_LocalRotation: {x: 0, y: .430904925, z: 0, w: .902397335}
-  m_LocalPosition: {x: 19.6499996, y: 1.31920004, z: 20.3999996}
+  m_LocalPosition: {x: 14.8629999, y: 1.31920004, z: 21.8430004}
   m_LocalScale: {x: .548925459, y: .512169361, z: 1}
   m_Children:
   - {fileID: 1431724376}
@@ -881,6 +900,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnSpeed: 1
   driveSpeed: 1
+--- !u!114 &1305923142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400008, guid: f513ab986200d4b26a15ce072a3feb1c,
+    type: 2}
+  m_PrefabInternal: {fileID: 748052825}
+  m_GameObject: {fileID: 1305923135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca7ca6cae248a46558354012bd455bbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &1357255610
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,6 +1029,10 @@ Prefab:
     - target: {fileID: 11400006, guid: f513ab986200d4b26a15ce072a3feb1c, type: 2}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: f513ab986200d4b26a15ce072a3feb1c, type: 2}
+      propertyPath: m_TagString
+      value: Fortress
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400002, guid: f513ab986200d4b26a15ce072a3feb1c, type: 2}
@@ -1182,7 +1218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   launchPoint: {fileID: 1556038423}
   bullet: {fileID: 100002, guid: 53c833ab1991c4f75a479cc3fe7e163f, type: 2}
-  bulletVelocity: 1000
+  bulletVelocity: 400
   rateOfFire: .100000001
 --- !u!1 &1538461230
 GameObject:

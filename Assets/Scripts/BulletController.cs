@@ -3,8 +3,8 @@ using System.Collections;
 
 public class BulletController : MonoBehaviour {
 
-    public float age = 1.0f;
-    public float ageAfterHit = 0.1f;
+	public float damage = 30.0f;
+	public float age = 1.0f;
 
 	void Start () {
 		rigidbody.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
@@ -19,8 +19,7 @@ public class BulletController : MonoBehaviour {
 	}
 
     void OnTriggerEnter(Collider other) {
-        age = ageAfterHit;
-        Light light = transform.FindChild("Point light").GetComponent<Light>();
-        light.intensity *= 2;
+    	// Make an explosion animation here
+    	GameObject.Destroy(gameObject);
     }
 }
