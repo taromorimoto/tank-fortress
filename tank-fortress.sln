@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{B79CDE9E-7CFD-70F1-E726-9A4D4C6EAFDA}") = "tank-fortress", "Assembly-CSharp.csproj", "{78BD01EE-481A-8D85-ACFD-C2086ADFCC1B}"
 EndProject
+Project("{B79CDE9E-7CFD-70F1-E726-9A4D4C6EAFDA}") = "tank-fortress", "Assembly-CSharp-Editor.csproj", "{BFC1ABDA-CD84-C649-654B-B386483CB8EA}"
+EndProject
+Project("{B79CDE9E-7CFD-70F1-E726-9A4D4C6EAFDA}") = "tank-fortress", "Assembly-UnityScript-Editor.unityproj", "{DE6F36D8-EC45-9E56-1981-BA5DF41D13C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,11 +17,19 @@ Global
 		{78BD01EE-481A-8D85-ACFD-C2086ADFCC1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78BD01EE-481A-8D85-ACFD-C2086ADFCC1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78BD01EE-481A-8D85-ACFD-C2086ADFCC1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFC1ABDA-CD84-C649-654B-B386483CB8EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFC1ABDA-CD84-C649-654B-B386483CB8EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFC1ABDA-CD84-C649-654B-B386483CB8EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFC1ABDA-CD84-C649-654B-B386483CB8EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE6F36D8-EC45-9E56-1981-BA5DF41D13C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE6F36D8-EC45-9E56-1981-BA5DF41D13C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE6F36D8-EC45-9E56-1981-BA5DF41D13C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE6F36D8-EC45-9E56-1981-BA5DF41D13C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																								GlobalSection(MonoDevelopProperties) = preSolution
+																												GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
