@@ -9,7 +9,7 @@ public class EnemyControl : MonoBehaviour {
 	float elapsed = 0;
 	
 	void Start () {
-		player = GameObject.Find("PlayerFortress");
+		player = GameObject.Find("PlayerTank");
 	}
 	
 	void Update () {
