@@ -24,7 +24,7 @@ Material:
         first:
           name: _Control
         second:
-          m_Texture: {fileID: 2800000, guid: ed84afa6204fcef46b8a607d8f47bc53, type: 2}
+          m_Texture: {fileID: 2800000, guid: 20bd625ad11343647a7d610461cfb7c4, type: 2}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -32,28 +32,28 @@ Material:
           name: _Splat3
         second:
           m_Texture: {fileID: 2800000, guid: 6c4c80d066111a34db23bc607ae34a15, type: 3}
-          m_Scale: {x: 64, y: 64}
+          m_Scale: {x: 68.2666702, y: 68.2666702}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _Splat2
         second:
           m_Texture: {fileID: 2800000, guid: 4d9727645d8b6c9459daa523ca2b9138, type: 3}
-          m_Scale: {x: 16, y: 16}
+          m_Scale: {x: 42.6666679, y: 42.6666679}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _Splat1
         second:
           m_Texture: {fileID: 2800000, guid: 1e8a2f7b46d788346888ca622317189f, type: 3}
-          m_Scale: {x: 128, y: 128}
+          m_Scale: {x: 64, y: 64}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _Splat0
         second:
-          m_Texture: {fileID: 2800000, guid: 627e44c8077ca40478e90eb2409c8849, type: 3}
-          m_Scale: {x: 32, y: 32}
+          m_Texture: {fileID: 2800000, guid: 58bcfdad54a2878478787f1ae381ca9a, type: 3}
+          m_Scale: {x: 85.3333359, y: 85.3333359}
           m_Offset: {x: 0, y: 0}
       data:
         first:
@@ -94,7 +94,7 @@ Material:
         first:
           name: _CombinedNormal12
         second:
-          m_Texture: {fileID: 2800000, guid: 59a110fee86c59d4bb9ad84b2793bb93, type: 3}
+          m_Texture: {fileID: 2800000, guid: 749b5c3d8b4eade43b80f09af5e60904, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -115,31 +115,31 @@ Material:
       data:
         first:
           name: _DetailNormalStrength
-        second: 1
+        second: .293000013
       data:
         first:
           name: _UpscaledNormalStrength
-        second: .340000004
+        second: .568000019
       data:
         first:
           name: _terrainDetailsFadeLenght
-        second: 500
+        second: 150
       data:
         first:
           name: _Splat0Tiling
-        second: 32
+        second: 85.3333359
       data:
         first:
           name: _Splat1Tiling
-        second: 128
+        second: 64
       data:
         first:
           name: _Splat2Tiling
-        second: 16
+        second: 42.6666679
       data:
         first:
           name: _Splat3Tiling
-        second: 64
+        second: 68.2666702
       data:
         first:
           name: _Splat4Tiling
@@ -155,11 +155,11 @@ Material:
       data:
         first:
           name: _Spec2
-        second: .078125
+        second: .00300000003
       data:
         first:
           name: _Spec3
-        second: .0799999982
+        second: .078125
       data:
         first:
           name: _Spec4
@@ -180,7 +180,7 @@ Material:
       data:
         first:
           name: _SpecColor
-        second: {r: 0, g: 0, b: 0, a: 1}
+        second: {r: .5, g: .5, b: .5, a: 1}
       data:
         first:
           name: _Parallax
@@ -188,11 +188,11 @@ Material:
       data:
         first:
           name: _terrainCombinedFloats
-        second: {r: .319999993, g: .5, b: 1000, a: .00999999978}
+        second: {r: .5, g: .5, b: 300, a: 1}
       data:
         first:
           name: _ColTex1
-        second: {r: .807843149, g: .733333349, b: .611764729, a: 0}
+        second: {r: .635294139, g: .588235319, b: .470588237, a: 0}
       data:
         first:
           name: _ColTex2
@@ -220,15 +220,15 @@ Material:
       data:
         first:
           name: _Fresnel
-        second: {r: 3, g: 1.5, b: -.801999986, a: 0}
+        second: {r: 1, g: 1, b: -.5, a: 0}
       data:
         first:
           name: _ReflectionColor
-        second: {r: .250980407, g: .250980407, b: .250980407, a: 1}
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _Elev
-        second: {r: .100000001, g: .5, b: 7.5, a: 1}
+        second: {r: .300000012, g: 1, b: 4.5, a: 1}
       data:
         first:
           name: _Elev1
