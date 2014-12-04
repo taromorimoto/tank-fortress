@@ -11,6 +11,9 @@ public class PlayerControl : MonoBehaviour {
 	
 	void Update() {
 		if (Input.GetKeyDown(fireCannon)) {
+			gameObject.BroadcastMessage("ChargeCannon");
+		}
+		if (Input.GetKeyUp(fireCannon)) {
 			gameObject.BroadcastMessage("FireCannon");
 		}
 		

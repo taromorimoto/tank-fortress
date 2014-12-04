@@ -8,14 +8,16 @@ public class CannonController : MonoBehaviour {
     public float bulletVelocity = 1000;
 	public float cooldownMax = 1.0f;
 
+	bool charging = false;
+	float charge = 0;
 	bool fired = false;
-    float lastShot = 0;
 	float cooldown = 1.0f;
 	
-	void Start () {
-	
+	public void ChargeCannon() {
+		print(gameObject.name + " charging");
+		charging = true;
 	}
-
+	
 	public void FireCannon() {
 		print(gameObject.name + " fired");
 		fired = true;
@@ -26,21 +28,25 @@ public class CannonController : MonoBehaviour {
         if (cooldown > cooldownMax) {
 			cooldown = cooldownMax;
         }
+        
+        if (charging) {
+        	charge += Time.deltaTime;
+        }
 
         if (fired) {
-	        print ("muui!");
-            if (cooldown == cooldownMax) {
+            //if (cooldown == cooldownMax) {
                 Fire();
-                cooldown = 0;
-            }
-			fired = false;
+            //}
 		}		
 	}
 
     void Fire() {
         GameObject bulletInstance = (GameObject)Instantiate(bullet, launchPoint.position, launchPoint.rotation);
-        bulletInstance.GetComponent<Rigidbody>().AddForce(launchPoint.forward * bulletVelocity);
-    }
-
+        bulletInstance.GetComponent<Rigidbody>().AddForce(launchPoint.forward * bulletVelocity * charge);
+		cooldown = 0;
+		charge = 0;
+		charging = false;
+		fired = false;
+	}
 
 }
