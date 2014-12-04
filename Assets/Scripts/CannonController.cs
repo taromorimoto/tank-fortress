@@ -7,12 +7,18 @@ public class CannonController : MonoBehaviour {
 	public GameObject bullet;
     public float bulletVelocity = 1000;
 	public float cooldownMax = 1.0f;
-	
+
+	bool fired = false;
     float lastShot = 0;
 	float cooldown = 1.0f;
 	
 	void Start () {
 	
+	}
+
+	public void FireCannon() {
+		print(gameObject.name + " fired");
+		fired = true;
 	}
 	
 	void Update () {
@@ -21,15 +27,14 @@ public class CannonController : MonoBehaviour {
 			cooldown = cooldownMax;
         }
 
-        bool fireKeyDown = Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.UpArrow);
-
-        if (fireKeyDown) {
+        if (fired) {
+	        print ("muui!");
             if (cooldown == cooldownMax) {
                 Fire();
                 cooldown = 0;
             }
-        }		
-	
+			fired = false;
+		}		
 	}
 
     void Fire() {

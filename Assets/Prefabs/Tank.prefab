@@ -142,10 +142,10 @@ GameObject:
   - 4: {fileID: 400016}
   - 54: {fileID: 5400000}
   - 65: {fileID: 6500000}
-  - 114: {fileID: 11400012}
   - 114: {fileID: 11400010}
   - 114: {fileID: 11400008}
   - 65: {fileID: 6500002}
+  - 114: {fileID: 11400012}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Fortress
@@ -415,7 +415,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100016}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.3839998, y: 1.20060003, z: 24.9220009}
+  m_LocalPosition: {x: 32.0390015, y: .300799996, z: 32.0999985}
   m_LocalScale: {x: .116372645, y: .116372645, z: .116372645}
   m_Children:
   - {fileID: 400024}
@@ -871,7 +871,7 @@ Rigidbody:
   m_GameObject: {fileID: 100016}
   serializedVersion: 2
   m_Mass: 1000
-  m_Drag: 100
+  m_Drag: 10
   m_AngularDrag: .0500000007
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -973,8 +973,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 145ad4d1ad6eb4ced9ad453f7b93228d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnSpeed: .25
-  driveSpeed: 1.5
+  turnSpeed: 50
+  driveSpeed: 50000
 --- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -986,7 +986,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26a265c77d1ff4665b4adff5d6df08af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrain: {fileID: 0}
+  fireCannon: 307
+  accelerate: 119
+  reverse: 115
+  turnLeft: 97
+  turnRight: 100
 --- !u!114 &11400014
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1004,7 +1008,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100032}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: abc4bf895fb414ebab61aaa9805197d9, type: 3}
   m_Name: 
