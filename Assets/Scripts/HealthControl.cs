@@ -13,17 +13,13 @@ public class HealthControl : MonoBehaviour {
 	
 	}
 	
-	
-	void OnCollisionEnter(Collision col) {
-		if (col.gameObject.tag == "Projectile") {
-			BulletController bullet = col.gameObject.GetComponent<BulletController>();
-			health -= bullet.damage;
-			print ("Fortress hit. Health:" + health);
-			if (health < 0) {
-				// Make death animation here
-				print ("Fortress destroyed. Health:" + health);
-				GameObject.Destroy(gameObject);
-			}
+	public void ApplyDamage(float damage) {
+		health -= damage;
+		print ("Fortress hit. Damage: " + damage + " Health:" + health);
+		if (health < 0) {
+			// Make death animation here
+			print ("Fortress destroyed. Health:" + health);
+			GameObject.Destroy(gameObject);
 		}
 	}
 	

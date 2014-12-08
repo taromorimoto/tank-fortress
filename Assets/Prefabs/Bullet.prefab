@@ -262,7 +262,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a72eec0dc054573b8634d83147980c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 100000, guid: 5626a7082435b40a2839a84840281bc0, type: 2}
   damage: 30
+  radius: 20
   age: 15
 --- !u!1001 &100100000
 Prefab:

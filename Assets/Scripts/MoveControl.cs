@@ -10,12 +10,12 @@ public class MoveControl : MonoBehaviour {
 	
 	public void SetTurn(float direction) {
 		turn = turnSpeed * direction;
-		print(gameObject.name + " SetTurn: " + turn);
+		//print(gameObject.name + " SetTurn: " + turn);
 	}
 	
 	public void SetDrive(float direction) {
 		drive = driveSpeed * direction;
-		print(gameObject.name + " SetDrive: " + drive);
+		//print(gameObject.name + " SetDrive: " + drive);
 	}
 	
 	void Update() {
