@@ -7,7 +7,8 @@ public class CannonController : MonoBehaviour {
 	public GameObject bullet;
     public float bulletVelocity = 1000;
 	public float cooldownMax = 1.0f;
-
+	public float baseCharge = 0.3f;
+	
 	bool charging = false;
 	float charge = 0;
 	bool fired = false;
@@ -42,7 +43,7 @@ public class CannonController : MonoBehaviour {
 
     void Fire() {
         GameObject bulletInstance = (GameObject)Instantiate(bullet, launchPoint.position, launchPoint.rotation);
-        bulletInstance.GetComponent<Rigidbody>().AddForce(launchPoint.forward * bulletVelocity * charge);
+        bulletInstance.GetComponent<Rigidbody>().AddForce(launchPoint.forward * bulletVelocity * (charge + baseCharge));
 		cooldown = 0;
 		charge = 0;
 		charging = false;
