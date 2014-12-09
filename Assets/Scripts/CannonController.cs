@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class CannonController : MonoBehaviour {
 
+	public Slider chargeSlider;
     public Transform launchPoint;
 	public GameObject bullet;
     public float bulletVelocity = 1000;
@@ -17,6 +19,7 @@ public class CannonController : MonoBehaviour {
 	public void ChargeCannon() {
 		print(gameObject.name + " charging");
 		charging = true;
+		chargeSlider.value = 0;
 	}
 	
 	public void FireCannon() {
@@ -32,7 +35,8 @@ public class CannonController : MonoBehaviour {
         
         if (charging) {
         	charge += Time.deltaTime;
-        }
+			chargeSlider.value = charge;
+		}
 
         if (fired) {
             //if (cooldown == cooldownMax) {
@@ -46,6 +50,7 @@ public class CannonController : MonoBehaviour {
         bulletInstance.GetComponent<Rigidbody>().AddForce(launchPoint.forward * bulletVelocity * (charge + baseCharge));
 		cooldown = 0;
 		charge = 0;
+		chargeSlider.value = 0;
 		charging = false;
 		fired = false;
 	}
