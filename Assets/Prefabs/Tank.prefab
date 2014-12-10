@@ -1014,12 +1014,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abc4bf895fb414ebab61aaa9805197d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chargeSlider: {fileID: 0}
+  energySlider: {fileID: 0}
   launchPoint: {fileID: 400034}
   bullet: {fileID: 100002, guid: 53c833ab1991c4f75a479cc3fe7e163f, type: 2}
   bulletVelocity: 1000
   cooldownMax: 1
   baseCharge: .5
+  energyUsePerShot: .100000001
+  energyRegenerationSpeed: .0599999987
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
