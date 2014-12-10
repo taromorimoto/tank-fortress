@@ -22,7 +22,11 @@ public class CannonController : MonoBehaviour {
 	float cooldown = 1.0f;
 
 	void CreateAim() {
-		aim = (GameObject)Instantiate(aimPrefab, transform.parent.position + transform.parent.forward * 40.0f, transform.parent.rotation);
+		aim = (GameObject)Instantiate(aimPrefab, GetAimPosition(), transform.parent.rotation);
+	}
+
+	Vector3 GetAimPosition() {
+		return transform.parent.position + transform.parent.forward * (baseCharge + charge) * 70.0f;
 	}
 	
 	void DestroyAim() {
@@ -55,7 +59,7 @@ public class CannonController : MonoBehaviour {
         if (charging) {
         	charge += Time.deltaTime;
         	if (aim != null) {
-				aim.transform.position = aim.transform.position + transform.parent.forward * Time.deltaTime * 100.0f;
+				aim.transform.position = GetAimPosition();
         	}
 		}
 
@@ -65,10 +69,17 @@ public class CannonController : MonoBehaviour {
             //}
 		}		
 	}
+	
+	float GetCharge() {
+		float c = charge + baseCharge;
+		float v = c * Mathf.Pow(0.85f, c);
+		print (c + " -> " + v);
+		return v;
+	}
 
     void Fire() {
         GameObject bulletInstance = (GameObject)Instantiate(bullet, launchPoint.position, launchPoint.rotation);
-        bulletInstance.GetComponent<Rigidbody>().AddForce(launchPoint.forward * bulletVelocity * (charge + baseCharge));
+        bulletInstance.GetComponent<Rigidbody>().AddForce(launchPoint.forward * bulletVelocity * GetCharge());
 		cooldown = 0;
 		charge = 0;
 		energySlider.value -= energyUsePerShot;
