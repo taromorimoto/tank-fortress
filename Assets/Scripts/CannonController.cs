@@ -7,25 +7,38 @@ public class CannonController : MonoBehaviour {
 	public Slider energySlider;
     public Transform launchPoint;
 	public GameObject bullet;
-    public float bulletVelocity = 1000;
+	public GameObject aimPrefab;
+		
+	public float bulletVelocity = 1000;
 	public float cooldownMax = 1.0f;
 	public float baseCharge = 0.3f;
 	public float energyUsePerShot = 0.1f;
 	public float energyRegenerationSpeed = 0.03f;
 	
+	GameObject aim;
 	bool charging = false;
 	float charge = 0;
 	bool fired = false;
 	float cooldown = 1.0f;
+
+	void CreateAim() {
+		aim = (GameObject)Instantiate(aimPrefab, transform.parent.position + transform.parent.forward * 40.0f, transform.parent.rotation);
+	}
+	
+	void DestroyAim() {
+		GameObject.Destroy(aim);
+	}
 	
 	public void ChargeCannon() {
 		print(gameObject.name + " charging");
 		charging = true;
+		CreateAim();
 	}
 	
 	public void FireCannon() {
 		print(gameObject.name + " fired");
 		fired = true;
+		DestroyAim();
 	}
 	
 	void Update () {
@@ -41,6 +54,9 @@ public class CannonController : MonoBehaviour {
         
         if (charging) {
         	charge += Time.deltaTime;
+        	if (aim != null) {
+				aim.transform.position = aim.transform.position + transform.parent.forward * Time.deltaTime * 100.0f;
+        	}
 		}
 
         if (fired) {

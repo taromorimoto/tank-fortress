@@ -1017,6 +1017,7 @@ MonoBehaviour:
   energySlider: {fileID: 0}
   launchPoint: {fileID: 400034}
   bullet: {fileID: 100002, guid: 53c833ab1991c4f75a479cc3fe7e163f, type: 2}
+  aimPrefab: {fileID: 100000, guid: 5f7ff9c5f9dd34252b022f25e8064144, type: 2}
   bulletVelocity: 1000
   cooldownMax: 1
   baseCharge: .5
