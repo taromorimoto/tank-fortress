@@ -13,6 +13,10 @@ public class HealthControl : MonoBehaviour {
 		maxHealth = health;
 	}
 	
+	public void SetMaxHealth() {
+		health = maxHealth;
+	}
+	
 	void Update () {
 	
 	}
