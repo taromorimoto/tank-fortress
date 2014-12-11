@@ -6,6 +6,8 @@ public class MoveControl : MonoBehaviour {
 	public float driveSpeed = 100.0f;
 	public float nitroForce = 500000.0f;
 	
+	public AudioSource nitroAudio;
+	
 	float turn = 0;
 	float drive = 0;
 	CannonController cannon;
@@ -17,6 +19,7 @@ public class MoveControl : MonoBehaviour {
 	public void UseNitro() {
 		rigidbody.AddForce(transform.forward * nitroForce * cannon.energySlider.value, ForceMode.Impulse);
 		print(gameObject.name + " UseNitro!");
+		nitroAudio.Play();
 	}
 	
 	public void SetTurn(float direction) {
