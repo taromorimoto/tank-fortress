@@ -78,14 +78,16 @@ public class CannonController : MonoBehaviour {
 	}
 
     void Fire() {
-        GameObject bulletInstance = (GameObject)Instantiate(bullet, launchPoint.position, launchPoint.rotation);
-        bulletInstance.GetComponent<Rigidbody>().AddForce(launchPoint.forward * bulletVelocity * GetCharge());
+		if (energySlider.value > energyUsePerShot) {
+			GameObject bulletInstance = (GameObject)Instantiate(bullet, launchPoint.position, launchPoint.rotation);
+			bulletInstance.GetComponent<Rigidbody>().AddForce(launchPoint.forward * bulletVelocity * GetCharge());
+			energySlider.value -= energyUsePerShot;
+			if (energySlider.value < 0) {
+				energySlider.value = 0;
+			}
+		}
 		cooldown = 0;
 		charge = 0;
-		energySlider.value -= energyUsePerShot;
-		if (energySlider.value < 0) {
-			energySlider.value = 0;
-		}
 		charging = false;
 		fired = false;
 	}

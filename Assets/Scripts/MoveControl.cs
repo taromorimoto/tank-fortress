@@ -4,9 +4,16 @@ using System.Collections;
 public class MoveControl : MonoBehaviour {
 	public float turnSpeed = 100.0f;
 	public float driveSpeed = 100.0f;
-
+	public float nitroForce = 500000.0f;
+	
 	float turn = 0;
 	float drive = 0;
+	
+	public void UseNitro() {
+		rigidbody.AddForce(transform.forward * nitroForce, ForceMode.Impulse);
+		print(gameObject.name + " UseNitro!");
+		
+	}
 	
 	public void SetTurn(float direction) {
 		turn = turnSpeed * direction;
