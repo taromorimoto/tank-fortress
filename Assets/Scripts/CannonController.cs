@@ -14,7 +14,6 @@ public class CannonController : MonoBehaviour {
 	public float baseCharge = 0.3f;
 	public float energyUsePerShot = 0.1f;
 	public float energyRegenerationSpeed = 0.03f;
-	public float aimTweak = 60.0f;
 	
 	GameObject aim;
 	bool charging = false;
@@ -27,9 +26,7 @@ public class CannonController : MonoBehaviour {
 	}
 
 	Vector3 GetAimPosition() {
-		float c = (baseCharge + charge);
-		float v = c * Mathf.Pow(0.95f, 0.5f) * aimTweak;
-		return transform.parent.position + transform.parent.forward * v;
+		return transform.parent.position + transform.parent.forward * (baseCharge + charge) * 70.0f;
 	}
 	
 	public void UseNitro() {
