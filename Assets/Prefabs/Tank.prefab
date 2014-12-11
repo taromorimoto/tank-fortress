@@ -1082,7 +1082,7 @@ MonoBehaviour:
   bulletVelocity: 5000
   cooldownMax: 1
   baseCharge: .5
-  energyUsePerShot: .100000001
+  energyUsePerShot: .300000012
   energyRegenerationSpeed: .0599999987
 --- !u!1001 &100100000
 Prefab:
