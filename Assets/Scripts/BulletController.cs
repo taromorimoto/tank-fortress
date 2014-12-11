@@ -22,12 +22,18 @@ public class BulletController : MonoBehaviour {
 	}
 
     void OnCollisionEnter(Collision other) {
-    	// Find tanks and calculate damage based on radius and distance
-		GameObject[] tanks = GameObject.FindGameObjectsWithTag("Tank");
-		for (int i = 0; i < tanks.Length; i++) {
-			DamageTank(tanks[i]);
+
+		// Find tanks and calculate damage based on radius and distance
+		// Find buildings and based on radius and distance facture them
+		Collider[] _colliders = Physics.OverlapSphere(transform.position, radius);
+		foreach (Collider hit in _colliders) {
+			if (hit.gameObject.tag == "Building") {
+				FractureBuilding(hit.gameObject);
+			} else if (hit.gameObject.tag == "Tank") {
+				DamageTank(hit.gameObject);
+			}
 		}
-		
+								
 		// Make an explosion animation here and replace this dummy
 		GameObject explosionInstance = (GameObject)Instantiate(explosion, transform.position, explosion.transform.rotation);
 		Detonator det = explosionInstance.GetComponentInChildren<Detonator>();
@@ -35,10 +41,15 @@ public class BulletController : MonoBehaviour {
 		GameObject.Destroy(gameObject);		
 	}
     
-    void DamageTank(GameObject tank) {
+	void DamageTank(GameObject tank) {
 		float dist = Vector3.Distance(tank.transform.position, transform.position);
-		if (dist < radius) {
-			tank.GetComponent<HealthControl>().ApplyDamage((radius - dist) / radius * damage);
+		float amount = (radius - dist) / radius * damage;
+		if (amount > 0) {
+			tank.GetComponent<HealthControl>().ApplyDamage(amount);
 		}
-    }
+	}
+	
+	void FractureBuilding(GameObject building) {
+		building.transform.parent.gameObject.GetComponent<Building>().Fracture();
+	}
 }
