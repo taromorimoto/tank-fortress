@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Building_Ext
+  m_Shader: {fileID: 4800000, guid: a10342f231b45d84c9ea4e9a8f84e6bd, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 3f16c24a7484bbe4d8bd9ff0b85ae506, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 86f17c62b1053cf439a1428415eef7e9, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Reflections
+        second:
+          m_Texture: {fileID: 8900000, guid: 3c0dc4d70e74cdf4d8193af7a495a370, type: 2}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _RoughnessMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 6e19fb824e9e1e646a69bed95611ebc4, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _SpecularMap
+        second:
+          m_Texture: {fileID: 2800000, guid: b183b5a48d017504a8ad8e2bfd141ceb, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _SpecularPower
+        second: 209.642853
+      data:
+        first:
+          name: _Roughness
+        second: .770178556
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .760784328, g: .709803939, b: .592156887, a: 1}
+      data:
+        first:
+          name: _SpecularColor
+        second: {r: .196078435, g: .196078435, b: .196078435, a: 0}
