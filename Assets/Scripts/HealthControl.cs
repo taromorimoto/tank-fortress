@@ -15,6 +15,7 @@ public class HealthControl : MonoBehaviour {
 	
 	public void SetMaxHealth() {
 		health = maxHealth;
+		healthBarSlider.value = 1.0f;
 	}
 	
 	void Update () {
