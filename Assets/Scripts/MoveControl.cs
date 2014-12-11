@@ -8,11 +8,15 @@ public class MoveControl : MonoBehaviour {
 	
 	float turn = 0;
 	float drive = 0;
+	CannonController cannon;
+	
+	void Start() {
+		cannon = gameObject.GetComponentInChildren<CannonController>();
+	}
 	
 	public void UseNitro() {
-		rigidbody.AddForce(transform.forward * nitroForce, ForceMode.Impulse);
+		rigidbody.AddForce(transform.forward * nitroForce * cannon.energySlider.value, ForceMode.Impulse);
 		print(gameObject.name + " UseNitro!");
-		
 	}
 	
 	public void SetTurn(float direction) {

@@ -29,6 +29,10 @@ public class CannonController : MonoBehaviour {
 		return transform.parent.position + transform.parent.forward * (baseCharge + charge) * 70.0f;
 	}
 	
+	public void UseNitro() {
+		energySlider.value = 0;
+	}
+	
 	void DestroyAim() {
 		GameObject.Destroy(aim);
 	}
