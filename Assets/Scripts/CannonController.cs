@@ -38,15 +38,19 @@ public class CannonController : MonoBehaviour {
 	}
 	
 	public void ChargeCannon() {
-		print(gameObject.name + " charging");
-		charging = true;
-		CreateAim();
+		if (energySlider.value >= energyUsePerShot) {
+			print(gameObject.name + " charging");
+			charging = true;
+			CreateAim();
+		}
 	}
 	
 	public void FireCannon() {
-		print(gameObject.name + " fired");
-		fired = true;
-		DestroyAim();
+		if (charging) {
+			print(gameObject.name + " fired");
+			fired = true;
+			DestroyAim();
+		}
 	}
 	
 	void Update () {
