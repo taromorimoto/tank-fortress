@@ -4,6 +4,7 @@ using System.Collections;
 public class CameraController : MonoBehaviour {
 
 	public float ratio = 1.0f;
+	public float minDist = 200.0f;
 	
 	GameObject[] tanks;
 	Vector3 target;
@@ -24,7 +25,12 @@ public class CameraController : MonoBehaviour {
 	void Update () {
 		UpdateTarget();
 		
-		Camera.main.transform.localPosition = new Vector3(0, 0, -dist * ratio);
+		float calculatedDist = dist * ratio;
+		if (calculatedDist < minDist) {
+			calculatedDist = minDist;
+		}
+		
+		Camera.main.transform.localPosition = new Vector3(0, 0, -calculatedDist);
 		
 		transform.position = target;
 	}
