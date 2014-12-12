@@ -18840,7 +18840,7 @@ MonoBehaviour:
   bulletVelocity: 4000
   cooldownMax: 1
   baseCharge: .5
-  energyUsePerShot: .300000012
+  energyUsePerShot: .200000003
   energyRegenerationSpeed: .0599999987
 --- !u!1 &804633218
 GameObject:
@@ -19172,6 +19172,7 @@ GameObject:
   - 4: {fileID: 818189995}
   - 114: {fileID: 818189994}
   - 82: {fileID: 818189996}
+  - 114: {fileID: 818189997}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -19263,6 +19264,17 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!114 &818189997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 818189993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871a32e49ef154fdcae08749950ae21c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &821749166
 GameObject:
   m_ObjectHideFlags: 0
@@ -47787,7 +47799,7 @@ MonoBehaviour:
   bulletVelocity: 4000
   cooldownMax: 1
   baseCharge: .5
-  energyUsePerShot: .300000012
+  energyUsePerShot: .200000003
   energyRegenerationSpeed: .0599999987
 --- !u!23 &1916310761
 Renderer:
