@@ -80,7 +80,7 @@ public class CannonController : MonoBehaviour {
 	
 	float GetCharge() {
 		float c = charge + baseCharge;
-		float v = c * Mathf.Pow(0.85f, c + 0.5f);
+		float v = c * Mathf.Pow(0.785f, c + 0.5f);
 		print (c + " -> " + v);
 		return v;
 	}
