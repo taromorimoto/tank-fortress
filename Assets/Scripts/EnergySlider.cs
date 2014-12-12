@@ -17,7 +17,6 @@ public class EnergySlider : MonoBehaviour {
 		slider = GetComponentInParent<Slider>();
 		img = GetComponentInChildren<Image>();
 		original = img.color;
-		print (original);
 	}
 	
 	// Update is called once per frame

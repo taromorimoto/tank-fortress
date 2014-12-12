@@ -26845,7 +26845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e90d2ea8fa88a4ef48815814b26e9859, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ratio: 2.5
+  ratio: 2.70000005
   minDist: 200
 --- !u!4 &1079183021
 Transform:
