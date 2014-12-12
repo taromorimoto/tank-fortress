@@ -1094,7 +1094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnSpeed: 75
   driveSpeed: 25000
-  nitroForce: 50000
+  nitroForce: 80000
   nitroAudio: {fileID: 8200002}
   moveAudio: {fileID: 8200004}
   moveAudioFadeSpeed: 3
