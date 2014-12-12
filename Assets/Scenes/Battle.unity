@@ -19206,7 +19206,7 @@ AudioSource:
   m_GameObject: {fileID: 818189993}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: d9800d5095c0841e1bfbc9d53d5e5dd1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 879c67d01a2e6429dbdeec04c59c3f08, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -26824,6 +26824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ratio: 2.5
+  minDist: 200
 --- !u!4 &1079183021
 Transform:
   m_ObjectHideFlags: 0
@@ -41660,7 +41661,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnSpeed: 75
   driveSpeed: 25000
-  nitroForce: 50000
+  nitroForce: 80000
   nitroAudio: {fileID: 1714653777}
   moveAudio: {fileID: 1714653778}
   moveAudioFadeSpeed: 3
@@ -42853,7 +42854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnSpeed: 75
   driveSpeed: 25000
-  nitroForce: 50000
+  nitroForce: 80000
   nitroAudio: {fileID: 1761442500}
   moveAudio: {fileID: 1761442501}
   moveAudioFadeSpeed: 3
