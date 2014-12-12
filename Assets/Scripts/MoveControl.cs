@@ -8,8 +8,11 @@ public class MoveControl : MonoBehaviour {
 	
 	public AudioSource nitroAudio;
 	public AudioSource moveAudio;
+	public AudioSource turnAudio;
 	public float moveAudioFadeSpeed = 3.0f;
+	public float turnAudioFadeSpeed = 9.0f;
 	public float moveAudioFade = 0.0f;
+	public float turnAudioFade = 0.0f;
 	
 	float turn = 0;
 	float drive = 0;
@@ -36,7 +39,7 @@ public class MoveControl : MonoBehaviour {
 	}
 	
 	void UpdateMoveAudio() {
-		bool play = turn != 0 || drive != 0;
+		bool play = drive != 0;
 		if (play) {
 			moveAudioFade = Mathf.Lerp(moveAudioFade, 1.0f, moveAudioFadeSpeed * Time.deltaTime);
 		} else {
@@ -45,11 +48,11 @@ public class MoveControl : MonoBehaviour {
 		
 		if (moveAudio.isPlaying && !play && moveAudioFade < 0.05f) {
 			moveAudio.Stop();
-			print ("Audio Stop");
+			print ("Move audio Stop");
 		}
 		if (!moveAudio.isPlaying && play) {
 			moveAudio.Play();
-			print ("Audio Start");
+			print ("Move audio Start");
 		}
 		
 		if (moveAudio.isPlaying) {
@@ -58,8 +61,32 @@ public class MoveControl : MonoBehaviour {
 		}
 	}
 	
+	void UpdateTurnAudio() {
+		bool play = turn != 0 && drive == 0;
+		if (play) {
+			turnAudioFade = Mathf.Lerp(turnAudioFade, 1.0f, turnAudioFadeSpeed * Time.deltaTime);
+		} else {
+			turnAudioFade = Mathf.Lerp(turnAudioFade, 0.0f, turnAudioFadeSpeed * Time.deltaTime);
+		}
+		
+		if (turnAudio.isPlaying && !play && turnAudioFade < 0.05f) {
+			turnAudio.Stop();
+			print ("Turn audio Stop");
+		}
+		if (!turnAudio.isPlaying && play) {
+			turnAudio.Play();
+			print ("Turn audio Start");
+		}
+		
+		if (turnAudio.isPlaying) {
+			turnAudio.volume = turnAudioFade;
+			turnAudio.pitch = turnAudioFade;
+		}
+	}
+	
 	void Update() {
 		UpdateMoveAudio();
+		UpdateTurnAudio();
 		
 		if (turn != 0.0f) {
 			transform.RotateAround(transform.position, transform.up, turn * Time.deltaTime);
