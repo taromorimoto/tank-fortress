@@ -6,19 +6,27 @@ public class HealthKit : MonoBehaviour {
 	public float dist = 20.0f;
 
 	void Start () {
-		Vector3 pos = GetLooserTankPosition();
-		transform.position = new Vector3(pos.x + Random.Range(-dist, dist), 100.0f, pos.z + Random.Range(-dist, dist));
+		GameObject tank = GetLooserTank();
+		if (tank != null) {
+			Vector3 pos = tank.transform.position;
+			transform.position = new Vector3(pos.x + Random.Range(-dist, dist), 100.0f, pos.z + Random.Range(-dist, dist));
+		} else {
+			Destroy(gameObject);
+		}
 	}
 	
-	Vector3 GetLooserTankPosition() {
+	GameObject GetLooserTank() {
 		GameObject[] tanks = GameObject.FindGameObjectsWithTag("Tank");
-		if (tanks.Length < 2)
-			Destroy(gameObject);
+		if (tanks.Length < 2) {
+			return null;
+		}
 		
 		if (tanks[0].GetComponent<HealthControl>().health > tanks[1].GetComponent<HealthControl>().health) {
-			return tanks[1].transform.position;
+			return tanks[1];
+		} else if (tanks[0].GetComponent<HealthControl>().health < tanks[1].GetComponent<HealthControl>().health) {
+			return tanks[0];
 		} else {
-			return tanks[0].transform.position;
+			return null;
 		}
 	}
 	
