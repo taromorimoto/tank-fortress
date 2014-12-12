@@ -7,6 +7,9 @@ public class MoveControl : MonoBehaviour {
 	public float nitroForce = 500000.0f;
 	
 	public AudioSource nitroAudio;
+	public AudioSource moveAudio;
+	public float moveAudioFadeSpeed = 3.0f;
+	public float moveAudioFade = 0.0f;
 	
 	float turn = 0;
 	float drive = 0;
@@ -32,7 +35,32 @@ public class MoveControl : MonoBehaviour {
 		//print(gameObject.name + " SetDrive: " + drive);
 	}
 	
+	void UpdateMoveAudio() {
+		bool play = turn != 0 || drive != 0;
+		if (play) {
+			moveAudioFade = Mathf.Lerp(moveAudioFade, 1.0f, moveAudioFadeSpeed * Time.deltaTime);
+		} else {
+			moveAudioFade = Mathf.Lerp(moveAudioFade, 0.0f, moveAudioFadeSpeed * Time.deltaTime);
+		}
+		
+		if (moveAudio.isPlaying && !play && moveAudioFade < 0.05f) {
+			moveAudio.Stop();
+			print ("Audio Stop");
+		}
+		if (!moveAudio.isPlaying && play) {
+			moveAudio.Play();
+			print ("Audio Start");
+		}
+		
+		if (moveAudio.isPlaying) {
+			moveAudio.volume = moveAudioFade;
+			moveAudio.pitch = moveAudioFade;
+		}
+	}
+	
 	void Update() {
+		UpdateMoveAudio();
+		
 		if (turn != 0.0f) {
 			transform.RotateAround(transform.position, transform.up, turn * Time.deltaTime);
 		}

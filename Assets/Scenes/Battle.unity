@@ -207,6 +207,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 5398246}
+  m_HideIfInvisible: 0
 --- !u!1 &8334026
 GameObject:
   m_ObjectHideFlags: 0
@@ -3384,6 +3385,7 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 307971792}
   m_GameObject: {fileID: 162397552}
+  m_HideIfInvisible: 0
 --- !u!1 &165380941
 GameObject:
   m_ObjectHideFlags: 0
@@ -8627,6 +8629,7 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 1425153143}
   m_GameObject: {fileID: 394120936}
+  m_HideIfInvisible: 0
 --- !u!1 &399523779
 GameObject:
   m_ObjectHideFlags: 0
@@ -10233,6 +10236,7 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 1044525118}
   m_GameObject: {fileID: 464333794}
+  m_HideIfInvisible: 0
 --- !u!224 &464333798
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16100,6 +16104,7 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Priority: 3
   ignoreReversedGraphics: 1
   blockingObjects: 0
   m_BlockingMask:
@@ -16116,16 +16121,6 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
 --- !u!223 &694930918
 Canvas:
   m_ObjectHideFlags: 0
@@ -16140,7 +16135,6 @@ Canvas:
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!224 &694930919
@@ -18156,6 +18150,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 772609831}
+  m_HideIfInvisible: 0
 --- !u!1 &774913260
 GameObject:
   m_ObjectHideFlags: 0
@@ -18904,6 +18899,7 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 1935656448}
   m_GameObject: {fileID: 804633218}
+  m_HideIfInvisible: 0
 --- !u!1 &806168453
 GameObject:
   m_ObjectHideFlags: 0
@@ -19894,6 +19890,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 855414889}
+  m_HideIfInvisible: 0
 --- !u!1 &855450792
 GameObject:
   m_ObjectHideFlags: 0
@@ -22391,6 +22388,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 931863493}
+  m_HideIfInvisible: 0
 --- !u!1 &947717389
 GameObject:
   m_ObjectHideFlags: 0
@@ -26797,7 +26795,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400034, guid: df6e8d59ee67a194ca93ee238a6125de, type: 2}
   m_PrefabInternal: {fileID: 1135087284}
   m_GameObject: {fileID: 1082216407}
-  m_LocalRotation: {x: .707106888, y: 0, z: 0, w: .707106769}
+  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
   m_LocalPosition: {x: .60145998, y: -31.7959995, z: 1.10420001}
   m_LocalScale: {x: .856828451, y: 1.20724022, z: 6.57812881}
   m_Children: []
@@ -32230,7 +32228,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
-  m_DragThreshold: 5
 --- !u!4 &1296865656
 Transform:
   m_ObjectHideFlags: 0
@@ -33147,6 +33144,7 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 1044525118}
   m_GameObject: {fileID: 1343582003}
+  m_HideIfInvisible: 0
 --- !u!1 &1346348305
 GameObject:
   m_ObjectHideFlags: 0
@@ -34802,6 +34800,7 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 1935656448}
   m_GameObject: {fileID: 1415719882}
+  m_HideIfInvisible: 0
 --- !u!1 &1417812396
 GameObject:
   m_ObjectHideFlags: 0
@@ -36850,6 +36849,7 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 307971792}
   m_GameObject: {fileID: 1506080685}
+  m_HideIfInvisible: 0
 --- !u!1 &1520862644
 GameObject:
   m_ObjectHideFlags: 0
@@ -37443,7 +37443,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400034, guid: df6e8d59ee67a194ca93ee238a6125de, type: 2}
   m_PrefabInternal: {fileID: 327399805}
   m_GameObject: {fileID: 1556038422}
-  m_LocalRotation: {x: .707106888, y: 0, z: 0, w: .707106769}
+  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
   m_LocalPosition: {x: .60145998, y: -31.7959995, z: 1.10420001}
   m_LocalScale: {x: .856828451, y: 1.20724022, z: 6.57812881}
   m_Children: []
@@ -38285,6 +38285,7 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 1425153143}
   m_GameObject: {fileID: 1591438485}
+  m_HideIfInvisible: 0
 --- !u!1 &1600544577
 GameObject:
   m_ObjectHideFlags: 0
@@ -40023,6 +40024,7 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 1425153143}
   m_GameObject: {fileID: 1657104301}
+  m_HideIfInvisible: 0
 --- !u!1 &1658826176
 GameObject:
   m_ObjectHideFlags: 0
@@ -41098,6 +41100,7 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 1935656448}
   m_GameObject: {fileID: 1696770746}
+  m_HideIfInvisible: 0
 --- !u!1 &1699230574
 GameObject:
   m_ObjectHideFlags: 0
@@ -41551,6 +41554,7 @@ GameObject:
   - 114: {fileID: 1714653772}
   - 82: {fileID: 1714653776}
   - 82: {fileID: 1714653777}
+  - 82: {fileID: 1714653778}
   m_Layer: 0
   m_Name: Player1Tank
   m_TagString: Tank
@@ -41607,6 +41611,9 @@ MonoBehaviour:
   driveSpeed: 25000
   nitroForce: 50000
   nitroAudio: {fileID: 1714653777}
+  moveAudio: {fileID: 1714653778}
+  moveAudioFadeSpeed: 3
+  moveAudioFade: 0
 --- !u!114 &1714653772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41760,6 +41767,65 @@ AudioSource:
       tangentMode: 0
     - time: 1
       value: .150943398
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!82 &1714653778
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200004, guid: df6e8d59ee67a194ca93ee238a6125de,
+    type: 2}
+  m_PrefabInternal: {fileID: 327399805}
+  m_GameObject: {fileID: 1714653768}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: b50d008a6861f4f62b8a397f738071c9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 0
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 1
+  BypassListenerEffects: 1
+  BypassReverbZones: 1
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .578616321
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: .220125794
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -42616,6 +42682,7 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 1044525118}
   m_GameObject: {fileID: 1757421156}
+  m_HideIfInvisible: 0
 --- !u!1 &1757462296
 GameObject:
   m_ObjectHideFlags: 0
@@ -42723,6 +42790,7 @@ GameObject:
   - 114: {fileID: 1761442493}
   - 82: {fileID: 1761442499}
   - 82: {fileID: 1761442500}
+  - 82: {fileID: 1761442501}
   m_Layer: 0
   m_Name: Player2Tank
   m_TagString: Tank
@@ -42797,6 +42865,9 @@ MonoBehaviour:
   driveSpeed: 25000
   nitroForce: 50000
   nitroAudio: {fileID: 1761442500}
+  moveAudio: {fileID: 1761442501}
+  moveAudioFadeSpeed: 3
+  moveAudioFade: 0
 --- !u!65 &1761442496
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42932,6 +43003,65 @@ AudioSource:
       tangentMode: 0
     - time: 1
       value: .150943398
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!82 &1761442501
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200004, guid: df6e8d59ee67a194ca93ee238a6125de,
+    type: 2}
+  m_PrefabInternal: {fileID: 1135087284}
+  m_GameObject: {fileID: 1761442491}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: b50d008a6861f4f62b8a397f738071c9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 0
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 1
+  BypassListenerEffects: 1
+  BypassReverbZones: 1
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .578616321
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: .220125794
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -49846,6 +49976,7 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 307971792}
   m_GameObject: {fileID: 2009165490}
+  m_HideIfInvisible: 0
 --- !u!1 &2018853073
 GameObject:
   m_ObjectHideFlags: 0
