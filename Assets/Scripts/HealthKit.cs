@@ -4,35 +4,27 @@ using System.Collections;
 public class HealthKit : MonoBehaviour {
 
 	public float dist = 20.0f;
-
+	GameObject[] tanks;
+	
 	void Start () {
-		GameObject tank = GetLooserTank();
-		if (tank != null) {
-			Vector3 pos = tank.transform.position;
-			transform.position = new Vector3(pos.x + Random.Range(-dist, dist), 100.0f, pos.z + Random.Range(-dist, dist));
+		tanks = GameObject.FindGameObjectsWithTag("Tank");
+		if (tanks.Length < 2) {
+			Destroy(gameObject);
+			return;
+		}
+		
+		float positionRatio = GetPositionRatio();
+		
+		if (positionRatio == 1.0f) {
+			Vector3 target = Vector3.Lerp(tanks[0].transform.position, tanks[1].transform.position, 0.5f * positionRatio);
+			transform.position = new Vector3(target.x + Random.Range(-dist, dist), 100.0f, target.z + Random.Range(-dist, dist));
 		} else {
 			Destroy(gameObject);
 		}
 	}
 	
-	GameObject GetLooserTank() {
-		GameObject[] tanks = GameObject.FindGameObjectsWithTag("Tank");
-		if (tanks.Length < 2) {
-			return null;
-		}
-		
-		if (tanks[0].GetComponent<HealthControl>().health > tanks[1].GetComponent<HealthControl>().health) {
-			return tanks[1];
-		} else if (tanks[0].GetComponent<HealthControl>().health < tanks[1].GetComponent<HealthControl>().health) {
-			return tanks[0];
-		} else {
-			return null;
-		}
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	float GetPositionRatio() {
+		return tanks[0].GetComponent<HealthControl>().health / tanks[1].GetComponent<HealthControl>().health;
 	}
 	
 	void OnCollisionEnter(Collision other) {
