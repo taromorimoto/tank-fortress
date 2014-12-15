@@ -320,9 +320,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosions:
-  - {fileID: 8300000, guid: d62e181a09f8c4a0aba3cd18f1d5a236, type: 3}
-  - {fileID: 8300000, guid: f48c67964157141c8aced5e3f3ec1ee9, type: 3}
-  - {fileID: 8300000, guid: c7faeac7ecc39486f8e322f0d18d6c6a, type: 3}
+  - {fileID: 8300000, guid: 0e7e3ad77f1f64a31bf971956910f5ee, type: 3}
+  - {fileID: 8300000, guid: ddf877c6aec524b658971d0dec2f4c65, type: 3}
+  - {fileID: 8300000, guid: 7a1d7cf38459540cbbba90c595497370, type: 3}
 --- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1
