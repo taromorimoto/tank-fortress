@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerControl : MonoBehaviour {
 
 	public KeyCode fireCannon = KeyCode.Period;
+	public KeyCode changeAmmo;
 	public KeyCode nitro = KeyCode.Comma;
 	public KeyCode accelerate = KeyCode.UpArrow;
 	public KeyCode reverse = KeyCode.DownArrow;
@@ -18,6 +19,10 @@ public class PlayerControl : MonoBehaviour {
 			gameObject.BroadcastMessage("FireCannon");
 		}
 		
+		if (Input.GetKeyDown(changeAmmo)) {
+			gameObject.BroadcastMessage("ChangeAmmo");
+		}
+
 		if (Input.GetKeyDown(nitro)) {
 			gameObject.BroadcastMessage("UseNitro");
 		}

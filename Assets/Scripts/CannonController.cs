@@ -6,20 +6,26 @@ public class CannonController : MonoBehaviour {
 
 	public Slider energySlider;
     public Transform launchPoint;
-	public GameObject bullet;
+	public GameObject[] bulletPrefabs;
 	public GameObject aimPrefab;
 		
-	public float bulletVelocity = 1000;
 	public float cooldownMax = 1.0f;
 	public float baseCharge = 0.3f;
-	public float energyUsePerShot = 0.1f;
 	public float energyRegenerationSpeed = 0.03f;
 	
+	GameObject bulletPrefab;
+	BulletController bulletComp;
+	int bulletIndex = 0;
 	GameObject aim;
 	bool charging = false;
 	float charge = 0;
 	bool fired = false;
 	float cooldown = 1.0f;
+	
+	void Start() {
+		bulletPrefab = bulletPrefabs[bulletIndex];
+		bulletComp = bulletPrefab.GetComponent<BulletController>();
+	}
 
 	void CreateAim() {
 		aim = (GameObject)Instantiate(aimPrefab, GetAimPosition(), transform.parent.rotation);
@@ -33,12 +39,23 @@ public class CannonController : MonoBehaviour {
 		energySlider.value = 0;
 	}
 	
+	public void ChangeAmmo() {
+		bulletIndex++;
+		if (bulletIndex >= bulletPrefabs.Length) {
+			bulletIndex = 0;
+		}
+		bulletPrefab = bulletPrefabs[bulletIndex];
+		bulletComp = bulletPrefab.GetComponent<BulletController>();
+		
+		energySlider.gameObject.GetComponentInChildren<EnergySlider>().threshold = bulletComp.energyUse;
+	}
+	
 	void DestroyAim() {
 		GameObject.Destroy(aim);
 	}
 	
 	public void ChargeCannon() {
-		if (energySlider.value >= energyUsePerShot) {
+		if (energySlider.value >= bulletComp.energyUse) {
 			print(gameObject.name + " charging");
 			charging = true;
 			CreateAim();
@@ -90,10 +107,12 @@ public class CannonController : MonoBehaviour {
 	}
 
     void Fire() {
-		if (energySlider.value > energyUsePerShot) {
-			GameObject bulletInstance = (GameObject)Instantiate(bullet, launchPoint.position, launchPoint.rotation);
-			bulletInstance.GetComponent<Rigidbody>().AddForce(launchPoint.forward * bulletVelocity * GetCharge());
-			energySlider.value -= energyUsePerShot;
+		if (energySlider.value > bulletComp.energyUse) {
+			GameObject bulletInstance = (GameObject)Instantiate(bulletPrefab, launchPoint.position, launchPoint.rotation);
+			BulletController bullet = bulletInstance.GetComponent<BulletController>();
+			bullet.AddForce(launchPoint.forward * GetCharge());
+			
+			energySlider.value -= bullet.energyUse;
 			if (energySlider.value < 0) {
 				energySlider.value = 0;
 			}

@@ -32,7 +32,7 @@ GameObject:
   - 96: {fileID: 9600000}
   - 82: {fileID: 8200000}
   m_Layer: 0
-  m_Name: Bullet
+  m_Name: BaseBullet
   m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -196,8 +196,8 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Time: 15
-  m_StartWidth: 5
-  m_EndWidth: 5
+  m_StartWidth: 4
+  m_EndWidth: 3
   m_Colors:
     m_Color[0]:
       serializedVersion: 2
@@ -266,6 +266,8 @@ MonoBehaviour:
   damage: 30
   radius: 20
   age: 15
+  bulletVelocity: 4000
+  energyUse: .200000003
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

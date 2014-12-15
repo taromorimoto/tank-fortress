@@ -3454,7 +3454,7 @@ Transform:
   - {fileID: 1063280734}
   - {fileID: 1030569474}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
 --- !u!1 &165838929
 GameObject:
   m_ObjectHideFlags: 0
@@ -6853,7 +6853,7 @@ Prefab:
       objectReference: {fileID: 1415719884}
     - target: {fileID: 11400012, guid: df6e8d59ee67a194ca93ee238a6125de, type: 2}
       propertyPath: fireCannon
-      value: 50
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 5400000, guid: df6e8d59ee67a194ca93ee238a6125de, type: 2}
       propertyPath: m_Constraints
@@ -6862,6 +6862,10 @@ Prefab:
     - target: {fileID: 11400012, guid: df6e8d59ee67a194ca93ee238a6125de, type: 2}
       propertyPath: nitro
       value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400012, guid: df6e8d59ee67a194ca93ee238a6125de, type: 2}
+      propertyPath: changeAmmo
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: df6e8d59ee67a194ca93ee238a6125de, type: 2}
@@ -18827,12 +18831,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   energySlider: {fileID: 1415719884}
   launchPoint: {fileID: 1556038423}
-  bullet: {fileID: 100002, guid: 53c833ab1991c4f75a479cc3fe7e163f, type: 2}
+  bulletPrefabs:
+  - {fileID: 100002, guid: 53c833ab1991c4f75a479cc3fe7e163f, type: 2}
+  - {fileID: 100002, guid: 730ca6ef76ac84adb9b8fc58dcb761a2, type: 2}
   aimPrefab: {fileID: 100002, guid: 5f7ff9c5f9dd34252b022f25e8064144, type: 2}
-  bulletVelocity: 4000
   cooldownMax: 1
   baseCharge: .5
-  energyUsePerShot: .200000003
   energyRegenerationSpeed: .0599999987
 --- !u!1 &804633218
 GameObject:
@@ -19197,7 +19201,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!82 &818189996
 AudioSource:
   m_ObjectHideFlags: 0
@@ -28022,7 +28026,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: df6e8d59ee67a194ca93ee238a6125de, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100016, guid: df6e8d59ee67a194ca93ee238a6125de, type: 2}
       propertyPath: m_Name
@@ -28074,7 +28078,7 @@ Prefab:
       objectReference: {fileID: 464333795}
     - target: {fileID: 11400012, guid: df6e8d59ee67a194ca93ee238a6125de, type: 2}
       propertyPath: fireCannon
-      value: 46
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 11400012, guid: df6e8d59ee67a194ca93ee238a6125de, type: 2}
       propertyPath: nitro
@@ -28103,6 +28107,10 @@ Prefab:
     - target: {fileID: 5400000, guid: df6e8d59ee67a194ca93ee238a6125de, type: 2}
       propertyPath: m_Constraints
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400012, guid: df6e8d59ee67a194ca93ee238a6125de, type: 2}
+      propertyPath: changeAmmo
+      value: 46
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: df6e8d59ee67a194ca93ee238a6125de, type: 2}
@@ -40431,7 +40439,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c7d564c2ae3e94c18bf3e60d0e861b77, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: c7d564c2ae3e94c18bf3e60d0e861b77, type: 2}
       propertyPath: spawnInterval
@@ -41654,7 +41662,7 @@ Transform:
   - {fileID: 1723124228}
   - {fileID: 803856950}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!114 &1714653770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41704,7 +41712,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26a265c77d1ff4665b4adff5d6df08af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireCannon: 50
+  fireCannon: 51
+  changeAmmo: 50
   nitro: 49
   accelerate: 119
   reverse: 115
@@ -42894,7 +42903,7 @@ Transform:
   - {fileID: 1497875369}
   - {fileID: 1916310758}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!114 &1761442493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42907,7 +42916,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26a265c77d1ff4665b4adff5d6df08af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireCannon: 46
+  fireCannon: 45
+  changeAmmo: 46
   nitro: 44
   accelerate: 273
   reverse: 274
@@ -47914,12 +47924,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   energySlider: {fileID: 464333795}
   launchPoint: {fileID: 1082216408}
-  bullet: {fileID: 100002, guid: 53c833ab1991c4f75a479cc3fe7e163f, type: 2}
+  bulletPrefabs:
+  - {fileID: 100002, guid: 53c833ab1991c4f75a479cc3fe7e163f, type: 2}
+  - {fileID: 100002, guid: 730ca6ef76ac84adb9b8fc58dcb761a2, type: 2}
   aimPrefab: {fileID: 100002, guid: 5f7ff9c5f9dd34252b022f25e8064144, type: 2}
-  bulletVelocity: 4000
   cooldownMax: 1
   baseCharge: .5
-  energyUsePerShot: .200000003
   energyRegenerationSpeed: .0599999987
 --- !u!23 &1916310761
 Renderer:

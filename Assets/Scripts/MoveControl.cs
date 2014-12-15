@@ -38,7 +38,6 @@ public class MoveControl : MonoBehaviour {
 	
 	public void SetDrive(float direction) {
 		drive = driveSpeed * direction;
-		//print(gameObject.name + " SetDrive: " + drive);
 	}
 	
 	void UpdateMoveAudio() {

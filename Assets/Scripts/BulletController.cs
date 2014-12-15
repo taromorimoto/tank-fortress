@@ -8,7 +8,9 @@ public class BulletController : MonoBehaviour {
 	public float damage = 30.0f;
 	public float radius = 20.0f;
 	public float age = 15.0f;
-
+	public float bulletVelocity = 4000;
+	public float energyUse = 0.2f;
+	
 	void Start () {
 		rigidbody.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
 	}
@@ -20,11 +22,14 @@ public class BulletController : MonoBehaviour {
             Destroy(gameObject);
         }
 	}
-
+	
+	public void AddForce(Vector3 vec) {
+		rigidbody.AddForce(vec * bulletVelocity);
+	}
+	
     void OnCollisionEnter(Collision other) {
 
-		// Find tanks and calculate damage based on radius and distance
-		// Find buildings and based on radius and distance facture them
+		// Find tanks and buldings. Calculate damage based on radius and distance.
 		Collider[] _colliders = Physics.OverlapSphere(transform.position, radius);
 		foreach (Collider hit in _colliders) {
 			if (hit.gameObject.tag == "Building") {

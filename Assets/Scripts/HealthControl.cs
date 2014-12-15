@@ -30,7 +30,7 @@ public class HealthControl : MonoBehaviour {
 		if (health < 0) {
 			print ("Tank destroyed. Health:" + health);
 			GameObject.Destroy(gameObject, 2.0f);
-			GameObject bulletInstance = (GameObject)Instantiate(deathExplosionPrefab, transform.position, transform.rotation);
+			Instantiate(deathExplosionPrefab, transform.position, transform.rotation);
 		}
 	}
 	
