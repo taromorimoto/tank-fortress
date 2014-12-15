@@ -97,7 +97,7 @@ public class MoveControl : MonoBehaviour {
 	
 	void FixedUpdate() {
 		if (drive != 0.0f) {
-			rigidbody.AddForce(transform.forward * drive, ForceMode.Force);
+			rigidbody.AddForce(transform.forward * drive * (turn != 0 ? 0.6f : 1), ForceMode.Force);
 		}
 	}
 }
