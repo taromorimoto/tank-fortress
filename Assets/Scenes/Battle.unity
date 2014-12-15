@@ -19290,7 +19290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 100000, guid: e666d771260294b68b3df7219675ff83, type: 2}
-  spawnInterval: 20
+  spawnInterval: 30
 --- !u!4 &818189995
 Transform:
   m_ObjectHideFlags: 0
@@ -40474,7 +40474,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: c7d564c2ae3e94c18bf3e60d0e861b77, type: 2}
       propertyPath: spawnInterval
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7d564c2ae3e94c18bf3e60d0e861b77, type: 2}
