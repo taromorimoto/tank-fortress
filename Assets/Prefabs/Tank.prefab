@@ -304,6 +304,21 @@ GameObject:
   m_Component:
   - 4: {fileID: 400034}
   m_Layer: 0
+  m_Name: MineLaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100036
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400036}
+  m_Layer: 0
   m_Name: BulletLaunchPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -418,8 +433,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100016}
-  m_LocalRotation: {x: 0, y: -.291620582, z: 0, w: .956534088}
-  m_LocalPosition: {x: 100, y: .300799996, z: -150}
+  m_LocalRotation: {x: 0, y: .499999821, z: 0, w: -.866025507}
+  m_LocalPosition: {x: 80, y: 2, z: -50}
   m_LocalScale: {x: .150000006, y: .150000006, z: .150000006}
   m_Children:
   - {fileID: 400024}
@@ -528,6 +543,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 27.5000858, z: -15.9261322}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 400036}
   - {fileID: 400034}
   m_Father: {fileID: 400016}
   m_RootOrder: 6
@@ -537,6 +553,18 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100034}
+  m_LocalRotation: {x: -.266397357, y: 3.85038533e-07, z: 1.06418874e-07, w: .963863313}
+  m_LocalPosition: {x: 5.29599993e-06, y: 26.9810009, z: 3.10330009}
+  m_LocalScale: {x: .856826425, y: 1.20723987, z: 6.5781312}
+  m_Children: []
+  m_Father: {fileID: 400032}
+  m_RootOrder: 1
+--- !u!4 &400036
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100036}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
   m_LocalPosition: {x: .60145998, y: -31.7959995, z: 1.10420001}
   m_LocalScale: {x: .856828451, y: 1.20724022, z: 6.57812881}
@@ -1232,13 +1260,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26a265c77d1ff4665b4adff5d6df08af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireCannon: 304
-  changeAmmo: 0
+  fireCannon: 45
+  changeAmmo: 46
   nitro: 44
-  accelerate: 119
-  reverse: 115
-  turnLeft: 97
-  turnRight: 100
+  accelerate: 273
+  reverse: 274
+  turnLeft: 276
+  turnRight: 275
 --- !u!114 &11400014
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1262,10 +1290,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energySlider: {fileID: 0}
-  launchPoint: {fileID: 400034}
+  launchPoint: {fileID: 400036}
+  mineLaunchPoint: {fileID: 0}
   bulletPrefabs:
   - {fileID: 100002, guid: 53c833ab1991c4f75a479cc3fe7e163f, type: 2}
   - {fileID: 100002, guid: 730ca6ef76ac84adb9b8fc58dcb761a2, type: 2}
+  - {fileID: 100000, guid: 0e5a22c880e994eb0a57ae1f8e42b037, type: 2}
   aimPrefab: {fileID: 100002, guid: 5f7ff9c5f9dd34252b022f25e8064144, type: 2}
   noEnergyAudio: {fileID: 8200006}
   cooldownMax: 1

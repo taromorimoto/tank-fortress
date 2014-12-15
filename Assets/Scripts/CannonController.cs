@@ -5,7 +5,8 @@ using UnityEngine.UI;
 public class CannonController : MonoBehaviour {
 
 	public Slider energySlider;
-    public Transform launchPoint;
+	public Transform launchPoint;
+	public Transform mineLaunchPoint;
 	public GameObject[] bulletPrefabs;
 	public GameObject aimPrefab;
 	public AudioSource noEnergyAudio;
@@ -111,9 +112,14 @@ public class CannonController : MonoBehaviour {
 
     void Fire() {
 		if (energySlider.value > bulletComp.energyUse) {
-			GameObject bulletInstance = (GameObject)Instantiate(bulletPrefab, launchPoint.position, launchPoint.rotation);
+			Transform launchPos = launchPoint;
+			if (bulletIndex == 2) {
+				launchPos = mineLaunchPoint;
+			}
+			
+			GameObject bulletInstance = (GameObject)Instantiate(bulletPrefab, launchPos.position, launchPos.rotation);
 			BulletController bullet = bulletInstance.GetComponent<BulletController>();
-			bullet.AddForce(launchPoint.forward, GetCharge());
+			bullet.AddForce(launchPos.forward, GetCharge());
 			
 			energySlider.value -= bullet.energyUse;
 			if (energySlider.value < 0) {
