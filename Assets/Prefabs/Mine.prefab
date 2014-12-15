@@ -231,11 +231,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 100002, guid: f0fdd567b123f47dd85c08b44cd17494, type: 2}
-  damage: 30
+  damage: 40
   radius: 20
   age: 0
   bulletVelocity: 0
-  energyUse: .699999988
+  energyUse: .200000003
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
