@@ -8,6 +8,7 @@ public class CannonController : MonoBehaviour {
     public Transform launchPoint;
 	public GameObject[] bulletPrefabs;
 	public GameObject aimPrefab;
+	public AudioSource noEnergyAudio;
 		
 	public float cooldownMax = 1.0f;
 	public float baseCharge = 0.3f;
@@ -59,6 +60,8 @@ public class CannonController : MonoBehaviour {
 			print(gameObject.name + " charging");
 			charging = true;
 			CreateAim();
+		} else {
+			noEnergyAudio.Play();
 		}
 	}
 	
