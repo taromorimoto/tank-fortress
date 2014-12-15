@@ -7311,7 +7311,7 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 51, y: -286}
+  m_AnchoredPosition: {x: 51, y: -321}
   m_SizeDelta: {x: 108.5, y: 100}
   m_Pivot: {x: .5, y: .5}
 --- !u!111 &359500020
@@ -36591,7 +36591,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "GAME BY TARO MORIMOTO, JUUSO PATRIKAINEN, KRISTIAN PERNIL\xC4 & ANTTI RUONALA.
+  m_Text: "GAME BY TARO MORIMOTO, JUUSO PATRIKAINEN, JOONAS PERNIL\xC4 & ANTTI RUONALA.
     2014."
 --- !u!222 &1521949048
 CanvasRenderer:
@@ -39154,6 +39154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitSound: {fileID: 1645918753}
   hitSoundPlayDelay: .5
+  reloadDelay: 0
 --- !u!4 &1645918752
 Transform:
   m_ObjectHideFlags: 0
