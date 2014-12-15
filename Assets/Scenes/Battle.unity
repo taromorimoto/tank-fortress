@@ -19216,7 +19216,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 818189993}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 879c67d01a2e6429dbdeec04c59c3f08, type: 3}
   m_PlayOnAwake: 1
@@ -41679,6 +41679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca7ca6cae248a46558354012bd455bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathExplosionPrefab: {fileID: 100000, guid: dc533b4ca16d3cd4d94b4d9e8b3376f0, type: 2}
   healthBarSlider: {fileID: 394120938}
   health: 100
 --- !u!114 &1714653771
@@ -42936,6 +42937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca7ca6cae248a46558354012bd455bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathExplosionPrefab: {fileID: 100000, guid: dc533b4ca16d3cd4d94b4d9e8b3376f0, type: 2}
   healthBarSlider: {fileID: 1506080686}
   health: 100
 --- !u!114 &1761442495

@@ -450,11 +450,11 @@ MonoBehaviour:
   autoCreateFireball: 1
   autoCreateSparks: 1
   autoCreateShockwave: 1
-  autoCreateSmoke: 0
+  autoCreateSmoke: 1
   autoCreateGlow: 1
   autoCreateLight: 1
   autoCreateForce: 1
-  autoCreateHeatwave: 0
+  autoCreateHeatwave: 1
 --- !u!1002 &11400021
 EditorExtensionImpl:
   serializedVersion: 6

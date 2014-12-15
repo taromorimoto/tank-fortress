@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class HealthControl : MonoBehaviour {
 
+	public GameObject deathExplosionPrefab;
 	public Slider healthBarSlider;
 	public float health = 100.0f;
 
@@ -27,9 +28,9 @@ public class HealthControl : MonoBehaviour {
 		healthBarSlider.value -= damage / maxHealth;
 		print ("Tank hit. Damage: " + damage + " Health:" + health);
 		if (health < 0) {
-			// Make death animation here
 			print ("Tank destroyed. Health:" + health);
-			GameObject.Destroy(gameObject);
+			GameObject.Destroy(gameObject, 2.0f);
+			GameObject bulletInstance = (GameObject)Instantiate(deathExplosionPrefab, transform.position, transform.rotation);
 		}
 	}
 	

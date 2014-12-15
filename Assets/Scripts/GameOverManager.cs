@@ -25,9 +25,11 @@ public class GameOverManager : MonoBehaviour {
 		GameObject[] tanks = GameObject.FindGameObjectsWithTag("Tank");
 		if (tanks.Length == 1) {
 			print("Winner: " + tanks[0].name);
+			audio.Stop();
 			return true;
 		} else if (tanks.Length == 0) {
 			print("Both Players died!");
+			audio.Stop();
 			return true;
 		} else {
 			return false;

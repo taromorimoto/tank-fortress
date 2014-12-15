@@ -1138,6 +1138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca7ca6cae248a46558354012bd455bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathExplosionPrefab: {fileID: 100000, guid: dc533b4ca16d3cd4d94b4d9e8b3376f0, type: 2}
   healthBarSlider: {fileID: 0}
   health: 100
 --- !u!114 &11400010
