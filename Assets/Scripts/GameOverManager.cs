@@ -3,17 +3,21 @@ using System.Collections;
 
 public class GameOverManager : MonoBehaviour {
 
-	public float loadDelay = 5.0f;
-	float elapsed = 0.0f;
+	bool spacePressed = false;
 	
 	void FixedUpdate () {
 		if (HasGameEnded()) {
 			// Add here delay to load and show the winning player text etc! :)
 			
-			elapsed += Time.deltaTime;
-			if (elapsed > loadDelay) {
+			if (spacePressed) {
 				Application.LoadLevel("Intro");
 			}
+		}
+	}
+	
+	void Update() {
+		if (Input.GetKeyDown(KeyCode.Space)) {
+			spacePressed = true;
 		}
 	}
 	
