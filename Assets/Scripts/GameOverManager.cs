@@ -3,10 +3,17 @@ using System.Collections;
 
 public class GameOverManager : MonoBehaviour {
 
+	public float loadDelay = 5.0f;
+	float elapsed = 0.0f;
+	
 	void FixedUpdate () {
 		if (HasGameEnded()) {
 			// Add here delay to load and show the winning player text etc! :)
-			Application.LoadLevel("Battle");
+			
+			elapsed += Time.deltaTime;
+			if (elapsed > loadDelay) {
+				Application.LoadLevel("Intro");
+			}
 		}
 	}
 	
