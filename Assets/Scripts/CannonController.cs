@@ -61,9 +61,14 @@ public class CannonController : MonoBehaviour {
 	
 	public void ChargeCannon() {
 		if (energySlider.value >= bulletComp.energyUse) {
-			print(gameObject.name + " charging");
-			charging = true;
-			CreateAim();
+			if (bulletIndex == 2) {
+				print(gameObject.name + " dropped mine");
+				fired = true;
+			} else {
+				print(gameObject.name + " charging");
+				charging = true;
+				CreateAim();
+			}
 		} else {
 			noEnergyAudio.Play();
 		}
