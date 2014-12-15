@@ -4,6 +4,7 @@ using System.Collections;
 public class HealthKit : MonoBehaviour {
 
 	public float dist = 20.0f;
+	public float amount = 50.0f;
 	GameObject[] tanks;
 	
 	void Start () {
@@ -30,7 +31,7 @@ public class HealthKit : MonoBehaviour {
 	void OnCollisionEnter(Collision other) {
 		if (other.gameObject.tag == "Tank") {
 			HealthControl health = other.gameObject.GetComponent<HealthControl>();
-			health.SetMaxHealth();
+			health.ApplyDamage(-amount);
 			Destroy(gameObject);
 		}
 		
