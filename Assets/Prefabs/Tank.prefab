@@ -913,7 +913,7 @@ AudioSource:
   m_GameObject: {fileID: 100016}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: a73fbeef5138b455983385347ed40369, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f2e59ab6b2bb54583bf8b4f76daa51bb, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -925,9 +925,9 @@ AudioSource:
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 2
-  BypassEffects: 1
-  BypassListenerEffects: 1
-  BypassReverbZones: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -971,7 +971,7 @@ AudioSource:
   m_GameObject: {fileID: 100016}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 0a1afb264eccf487390ca714c59e5182, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 37de4c246fb484ab0980910df9b6359e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -983,9 +983,9 @@ AudioSource:
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 2
-  BypassEffects: 1
-  BypassListenerEffects: 1
-  BypassReverbZones: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -1029,7 +1029,7 @@ AudioSource:
   m_GameObject: {fileID: 100016}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: b50d008a6861f4f62b8a397f738071c9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 130ecaf1ce1b34d628fe85f691fea016, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1041,9 +1041,9 @@ AudioSource:
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 2
-  BypassEffects: 1
-  BypassListenerEffects: 1
-  BypassReverbZones: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
