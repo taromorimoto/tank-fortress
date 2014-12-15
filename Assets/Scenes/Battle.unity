@@ -207,7 +207,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 5398246}
-  m_HideIfInvisible: 0
 --- !u!1 &8334026
 GameObject:
   m_ObjectHideFlags: 0
@@ -3368,7 +3367,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: .588}
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
@@ -3385,7 +3384,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 307971792}
   m_GameObject: {fileID: 162397552}
-  m_HideIfInvisible: 0
 --- !u!1 &165380941
 GameObject:
   m_ObjectHideFlags: 0
@@ -8586,8 +8584,8 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
   m_TargetGraphic: {fileID: 1657104303}
+  m_Interactable: 1
   m_FillRect: {fileID: 1591438486}
   m_HandleRect: {fileID: 1657104302}
   m_Direction: 0
@@ -8612,7 +8610,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: .588}
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
@@ -8629,7 +8627,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 1425153143}
   m_GameObject: {fileID: 394120936}
-  m_HideIfInvisible: 0
 --- !u!1 &399523779
 GameObject:
   m_ObjectHideFlags: 0
@@ -10193,8 +10190,8 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
   m_TargetGraphic: {fileID: 1343582005}
+  m_Interactable: 1
   m_FillRect: {fileID: 1757421157}
   m_HandleRect: {fileID: 1343582004}
   m_Direction: 0
@@ -10219,7 +10216,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: .588}
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
@@ -10236,7 +10233,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 1044525118}
   m_GameObject: {fileID: 464333794}
-  m_HideIfInvisible: 0
 --- !u!224 &464333798
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16137,7 +16133,6 @@ Canvas:
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
-  m_OverrideSorting: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!224 &694930919
@@ -18132,7 +18127,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 0, g: 1, b: .0482757092, a: 1}
   m_FontData:
     m_Font: {fileID: 12800000, guid: 5b8df8ccbf6bbee49b8c79dbd8532506, type: 3}
@@ -18153,7 +18148,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 772609831}
-  m_HideIfInvisible: 0
 --- !u!1 &774913260
 GameObject:
   m_ObjectHideFlags: 0
@@ -18885,7 +18879,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: .588}
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
@@ -18902,7 +18896,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 1935656448}
   m_GameObject: {fileID: 804633218}
-  m_HideIfInvisible: 0
 --- !u!1 &806168453
 GameObject:
   m_ObjectHideFlags: 0
@@ -19212,7 +19205,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: c28199c96425d4452b04663efd64a97a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: .207000002
+  m_Volume: .156000003
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -19943,7 +19936,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 0, g: 1, b: .0482757092, a: 1}
   m_FontData:
     m_Font: {fileID: 12800000, guid: 5b8df8ccbf6bbee49b8c79dbd8532506, type: 3}
@@ -19964,7 +19957,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 855414889}
-  m_HideIfInvisible: 0
 --- !u!1 &855450792
 GameObject:
   m_ObjectHideFlags: 0
@@ -22446,7 +22438,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: .39199999}
   m_Sprite: {fileID: 21300000, guid: 1ac47bf3aa2d9a44387cc419c8414dbc, type: 3}
   m_Type: 1
@@ -22462,7 +22454,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 931863493}
-  m_HideIfInvisible: 0
 --- !u!1 &947717389
 GameObject:
   m_ObjectHideFlags: 0
@@ -22992,7 +22983,6 @@ MonoBehaviour:
   m_LightmapIndex: -1
   m_LightmapSize: 1024
   m_DrawTreesAndFoliage: 1
-  m_CollectDetailPatches: 1
   m_MaterialTemplate: {fileID: 2100000, guid: 8adf7f60f026e654380175810a391cba, type: 2}
 --- !u!4 &960995827
 Transform:
@@ -32313,7 +32303,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
 --- !u!4 &1296865656
 Transform:
   m_ObjectHideFlags: 0
@@ -33213,7 +33202,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: .588}
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
@@ -33230,7 +33219,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 1044525118}
   m_GameObject: {fileID: 1343582003}
-  m_HideIfInvisible: 0
 --- !u!1 &1346348305
 GameObject:
   m_ObjectHideFlags: 0
@@ -34843,8 +34831,8 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
   m_TargetGraphic: {fileID: 804633220}
+  m_Interactable: 1
   m_FillRect: {fileID: 1696770747}
   m_HandleRect: {fileID: 804633219}
   m_Direction: 0
@@ -34869,7 +34857,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: .588}
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
@@ -34886,7 +34874,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 1935656448}
   m_GameObject: {fileID: 1415719882}
-  m_HideIfInvisible: 0
 --- !u!1 &1417812396
 GameObject:
   m_ObjectHideFlags: 0
@@ -36864,8 +36851,8 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
   m_TargetGraphic: {fileID: 162397554}
+  m_Interactable: 1
   m_FillRect: {fileID: 2009165491}
   m_HandleRect: {fileID: 162397553}
   m_Direction: 0
@@ -36910,7 +36897,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: .588}
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
@@ -36927,7 +36914,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 307971792}
   m_GameObject: {fileID: 1506080685}
-  m_HideIfInvisible: 0
 --- !u!1 &1520862644
 GameObject:
   m_ObjectHideFlags: 0
@@ -38346,7 +38332,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 0, g: 1, b: .00784313772, a: .886274517}
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
@@ -38363,7 +38349,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 1425153143}
   m_GameObject: {fileID: 1591438485}
-  m_HideIfInvisible: 0
 --- !u!1 &1600544577
 GameObject:
   m_ObjectHideFlags: 0
@@ -40085,7 +40070,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: .588}
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
@@ -40102,7 +40087,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 1425153143}
   m_GameObject: {fileID: 1657104301}
-  m_HideIfInvisible: 0
 --- !u!1 &1658826176
 GameObject:
   m_ObjectHideFlags: 0
@@ -41165,7 +41149,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 0, g: .776470602, b: 1, a: 1}
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
@@ -41182,7 +41166,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 1935656448}
   m_GameObject: {fileID: 1696770746}
-  m_HideIfInvisible: 0
 --- !u!1 &1699230574
 GameObject:
   m_ObjectHideFlags: 0
@@ -42752,7 +42735,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 0, g: .776470602, b: 1, a: 1}
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
@@ -42769,7 +42752,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 1044525118}
   m_GameObject: {fileID: 1757421156}
-  m_HideIfInvisible: 0
 --- !u!1 &1757462296
 GameObject:
   m_ObjectHideFlags: 0
@@ -50043,7 +50025,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 0, g: 1, b: .00784313772, a: .886274517}
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
@@ -50060,7 +50042,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 307971792}
   m_GameObject: {fileID: 2009165490}
-  m_HideIfInvisible: 0
 --- !u!1 &2018853073
 GameObject:
   m_ObjectHideFlags: 0
