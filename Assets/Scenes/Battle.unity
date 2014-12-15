@@ -5727,7 +5727,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 1, b: .0482757092, a: 1}
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 5b8df8ccbf6bbee49b8c79dbd8532506, type: 3}
+    m_Font: {fileID: 12800000, guid: 8676d6d079974dd4b97e65aae13348e2, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 1
@@ -18175,7 +18175,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 1, b: .0482757092, a: 1}
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 5b8df8ccbf6bbee49b8c79dbd8532506, type: 3}
+    m_Font: {fileID: 12800000, guid: 8676d6d079974dd4b97e65aae13348e2, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 1
@@ -20038,7 +20038,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -12, y: -8}
+  m_AnchoredPosition: {x: -5.53000021, y: -8}
   m_SizeDelta: {x: 192.299988, y: 34.8000031}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &855414891
@@ -20055,7 +20055,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 1, b: .0482757092, a: 1}
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 5b8df8ccbf6bbee49b8c79dbd8532506, type: 3}
+    m_Font: {fileID: 12800000, guid: 8676d6d079974dd4b97e65aae13348e2, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 1
@@ -29689,7 +29689,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 1, b: .0482757092, a: 1}
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 5b8df8ccbf6bbee49b8c79dbd8532506, type: 3}
+    m_Font: {fileID: 12800000, guid: 8676d6d079974dd4b97e65aae13348e2, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 1
