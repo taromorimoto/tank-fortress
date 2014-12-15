@@ -29,8 +29,11 @@ public class MoveControl : MonoBehaviour {
 	}
 	
 	public void SetTurn(float direction) {
-		turn = turnSpeed * direction;
-		//print(gameObject.name + " SetTurn: " + turn);
+		if (cannon.IsAiming()) {
+			turn = turnSpeed * direction * 0.5f;
+		} else {
+			turn = turnSpeed * direction;
+		}
 	}
 	
 	public void SetDrive(float direction) {

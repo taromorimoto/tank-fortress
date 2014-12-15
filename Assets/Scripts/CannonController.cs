@@ -53,6 +53,10 @@ public class CannonController : MonoBehaviour {
 		}
 	}
 	
+	public bool IsAiming() {
+		return charging;
+	}
+	
 	void Update () {
         cooldown += Time.deltaTime;
 		energySlider.value += energyRegenerationSpeed * Time.deltaTime;
