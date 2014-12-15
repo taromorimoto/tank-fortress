@@ -1292,6 +1292,11 @@ MonoBehaviour:
   energySlider: {fileID: 0}
   launchPoint: {fileID: 400036}
   mineLaunchPoint: {fileID: 0}
+  bulletText: {fileID: 0}
+  bulletNames:
+  - CANNON
+  - MIRV
+  - MINE
   bulletPrefabs:
   - {fileID: 100002, guid: 53c833ab1991c4f75a479cc3fe7e163f, type: 2}
   - {fileID: 100002, guid: 730ca6ef76ac84adb9b8fc58dcb761a2, type: 2}

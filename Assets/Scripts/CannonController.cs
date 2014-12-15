@@ -7,6 +7,8 @@ public class CannonController : MonoBehaviour {
 	public Slider energySlider;
 	public Transform launchPoint;
 	public Transform mineLaunchPoint;
+	public Text bulletText;
+	public string[] bulletNames;
 	public GameObject[] bulletPrefabs;
 	public GameObject aimPrefab;
 	public AudioSource noEnergyAudio;
@@ -50,6 +52,7 @@ public class CannonController : MonoBehaviour {
 		bulletComp = bulletPrefab.GetComponent<BulletController>();
 		
 		energySlider.gameObject.GetComponentInChildren<EnergySlider>().threshold = bulletComp.energyUse;
+		bulletText.text = bulletNames[bulletIndex];
 	}
 	
 	void DestroyAim() {
