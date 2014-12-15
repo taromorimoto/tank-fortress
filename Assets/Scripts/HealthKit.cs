@@ -15,7 +15,7 @@ public class HealthKit : MonoBehaviour {
 		
 		float positionRatio = GetPositionRatio();
 		
-		if (positionRatio == 1.0f) {
+		if (Mathf.Abs(positionRatio) < 0.95f) {
 			Vector3 target = Vector3.Lerp(tanks[0].transform.position, tanks[1].transform.position, 0.5f * positionRatio);
 			transform.position = new Vector3(target.x + Random.Range(-dist, dist), 100.0f, target.z + Random.Range(-dist, dist));
 		} else {
