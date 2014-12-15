@@ -11,7 +11,6 @@ public class BulletExplosion : MonoBehaviour {
 		int i = Random.Range(0, explosions.Length);
 		aud = (AudioSource)gameObject.GetComponent<AudioSource>();
 		aud.clip = explosions[i];
-		print(i);
 		aud.Play();
 	}
 	

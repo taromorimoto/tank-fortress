@@ -11,11 +11,13 @@ public class BulletController : MonoBehaviour {
 	public float bulletVelocity = 4000;
 	public float energyUse = 0.2f;
 	
+	protected float charge;
+	
 	void Start () {
 		rigidbody.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
 	}
 	
-	void Update () {
+	public void Update () {
         age -= Time.deltaTime;
 
         if (age < 0) {
@@ -23,11 +25,16 @@ public class BulletController : MonoBehaviour {
         }
 	}
 	
-	public void AddForce(Vector3 vec) {
-		rigidbody.AddForce(vec * bulletVelocity);
+	public void AddForce(Vector3 dir, float _charge) {
+		charge = _charge;
+		rigidbody.AddForce(dir * charge * bulletVelocity);
 	}
 	
-    void OnCollisionEnter(Collision other) {
+    public void OnCollisionEnter(Collision other) {
+		//print (other.gameObject.tag);
+		if (other.gameObject.tag == "Projectile") {
+    		return;
+    	}
 
 		// Find tanks and buldings. Calculate damage based on radius and distance.
 		Collider[] _colliders = Physics.OverlapSphere(transform.position, radius);

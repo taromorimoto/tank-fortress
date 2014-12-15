@@ -110,7 +110,7 @@ public class CannonController : MonoBehaviour {
 		if (energySlider.value > bulletComp.energyUse) {
 			GameObject bulletInstance = (GameObject)Instantiate(bulletPrefab, launchPoint.position, launchPoint.rotation);
 			BulletController bullet = bulletInstance.GetComponent<BulletController>();
-			bullet.AddForce(launchPoint.forward * GetCharge());
+			bullet.AddForce(launchPoint.forward, GetCharge());
 			
 			energySlider.value -= bullet.energyUse;
 			if (energySlider.value < 0) {
