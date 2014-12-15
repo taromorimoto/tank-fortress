@@ -18909,12 +18909,12 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: .792387605
+      value: .456747502
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     - time: 1
-      value: .473569691
+      value: .189832687
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -48118,12 +48118,12 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: .792387605
+      value: .456747502
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     - time: 1
-      value: .473569691
+      value: .189832687
       inSlope: 0
       outSlope: 0
       tangentMode: 0
