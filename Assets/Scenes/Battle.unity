@@ -1652,15 +1652,15 @@ Prefab:
       objectReference: {fileID: 2038295495}
     - target: {fileID: 11400012, guid: df6e8d59ee67a194ca93ee238a6125de, type: 2}
       propertyPath: fireCannon
-      value: 51
+      value: 306
       objectReference: {fileID: 0}
     - target: {fileID: 11400012, guid: df6e8d59ee67a194ca93ee238a6125de, type: 2}
       propertyPath: changeAmmo
-      value: 50
+      value: 304
       objectReference: {fileID: 0}
     - target: {fileID: 11400012, guid: df6e8d59ee67a194ca93ee238a6125de, type: 2}
       propertyPath: nitro
-      value: 49
+      value: 308
       objectReference: {fileID: 0}
     - target: {fileID: 11400012, guid: df6e8d59ee67a194ca93ee238a6125de, type: 2}
       propertyPath: accelerate
@@ -41761,9 +41761,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26a265c77d1ff4665b4adff5d6df08af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireCannon: 51
-  changeAmmo: 50
-  nitro: 49
+  fireCannon: 306
+  changeAmmo: 304
+  nitro: 308
   accelerate: 119
   reverse: 115
   turnLeft: 97
