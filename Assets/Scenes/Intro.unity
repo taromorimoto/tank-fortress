@@ -870,7 +870,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Sprite: {fileID: 21300000, guid: da89346508e075946a2d2e5a867f3478, type: 3}
   m_Type: 0
@@ -2572,7 +2572,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Sprite: {fileID: 21300000, guid: f3e6bd7880f30ae489977fbb308e8a14, type: 3}
   m_Type: 0
@@ -7281,7 +7281,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Sprite: {fileID: 21300000, guid: 2fb9efe9bf8dade458edb1eebe32d759, type: 3}
   m_Type: 0
@@ -16024,8 +16024,6 @@ Canvas:
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!224 &694930919
@@ -22830,7 +22828,6 @@ MonoBehaviour:
   m_LightmapIndex: -1
   m_LightmapSize: 1024
   m_DrawTreesAndFoliage: 1
-  m_CollectDetailPatches: 1
   m_MaterialTemplate: {fileID: 2100000, guid: 8adf7f60f026e654380175810a391cba, type: 2}
 --- !u!4 &960995827
 Transform:
@@ -25369,7 +25366,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: .1953125, g: .1953125, b: .1953125, a: 1}
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8676d6d079974dd4b97e65aae13348e2, type: 3}
@@ -36577,7 +36574,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: .338235319, g: .248153552, b: .0870458558, a: 1}
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8676d6d079974dd4b97e65aae13348e2, type: 3}
@@ -39886,7 +39883,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Sprite: {fileID: 21300000, guid: 71e2c773b45a6d644aab6dd2228c3202, type: 3}
   m_Type: 0
@@ -45059,7 +45056,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Sprite: {fileID: 21300000, guid: 44e6cfe43e265d740ac18076e75d3227, type: 3}
   m_Type: 0
@@ -45387,7 +45384,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: df6e8d59ee67a194ca93ee238a6125de, type: 2}
       propertyPath: m_LocalRotation.y
-      value: .910099924
+      value: .910099983
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: df6e8d59ee67a194ca93ee238a6125de, type: 2}
       propertyPath: m_LocalRotation.z
@@ -45395,7 +45392,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: df6e8d59ee67a194ca93ee238a6125de, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -.414388776
+      value: -.414388806
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: df6e8d59ee67a194ca93ee238a6125de, type: 2}
       propertyPath: m_RootOrder
@@ -45413,6 +45410,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300014, guid: df6e8d59ee67a194ca93ee238a6125de, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ec160c2d4892cb64b80e7de1b18c9908, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: df6e8d59ee67a194ca93ee238a6125de, type: 2}
   m_RootGameObject: {fileID: 648021663}
@@ -49436,7 +49437,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: c678534d98ef26545a641139584cccc9, type: 2}
+  - {fileID: 2100000, guid: ec160c2d4892cb64b80e7de1b18c9908, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
