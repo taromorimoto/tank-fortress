@@ -199,8 +199,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 100002, guid: 2fa8fc6a72f884fbbbbb028c34123267, type: 2}
-  damage: 30
-  radius: 20
+  damage: 20
+  radius: 15
   age: 10
   bulletVelocity: 4000
   energyUse: .699999988

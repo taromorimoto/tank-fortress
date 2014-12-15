@@ -15,7 +15,9 @@ public class BulletExplosion : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
+	void FixedUpdate () {
+		if (transform.childCount == 0) {
+			Destroy(gameObject);
+		}
 	}
 }
