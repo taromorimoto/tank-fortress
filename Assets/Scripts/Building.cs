@@ -14,7 +14,8 @@ public class Building : MonoBehaviour {
 
 	}
 
-	public void Fracture() {
+	public void ApplyDamage(float amount) {
+		print ("Building is hit with damage: " + amount);
 
 		Destroy(buildingMesh);
 		buildingCells.SetActive(true);

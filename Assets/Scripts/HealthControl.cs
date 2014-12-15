@@ -25,10 +25,10 @@ public class HealthControl : MonoBehaviour {
 	public void ApplyDamage(float damage) {
 		health -= damage;
 		healthBarSlider.value -= damage / maxHealth;
-		print ("Fortress hit. Damage: " + damage + " Health:" + health);
+		print ("Tank hit. Damage: " + damage + " Health:" + health);
 		if (health < 0) {
 			// Make death animation here
-			print ("Fortress destroyed. Health:" + health);
+			print ("Tank destroyed. Health:" + health);
 			GameObject.Destroy(gameObject);
 		}
 	}

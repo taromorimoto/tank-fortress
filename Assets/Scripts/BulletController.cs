@@ -28,9 +28,9 @@ public class BulletController : MonoBehaviour {
 		Collider[] _colliders = Physics.OverlapSphere(transform.position, radius);
 		foreach (Collider hit in _colliders) {
 			if (hit.gameObject.tag == "Building") {
-				FractureBuilding(hit.gameObject);
+				ApplyDamage(hit.gameObject.transform.parent.gameObject, hit.gameObject.renderer.bounds.center);
 			} else if (hit.gameObject.tag == "Tank") {
-				DamageTank(hit.gameObject);
+				ApplyDamage(hit.gameObject, hit.gameObject.collider.bounds.center);
 			}
 		}
 								
@@ -41,15 +41,12 @@ public class BulletController : MonoBehaviour {
 		GameObject.Destroy(gameObject);		
 	}
     
-	void DamageTank(GameObject tank) {
-		float dist = Vector3.Distance(tank.transform.position, transform.position);
+	void ApplyDamage(GameObject target, Vector3 targetPos) {
+		float dist = Vector3.Distance(targetPos, transform.position);
 		float amount = (radius - dist) / radius * damage;
 		if (amount > 0) {
-			tank.GetComponent<HealthControl>().ApplyDamage(amount);
+			target.BroadcastMessage("ApplyDamage", amount);
 		}
 	}
-	
-	void FractureBuilding(GameObject building) {
-		building.transform.parent.gameObject.GetComponent<Building>().Fracture();
-	}
+
 }

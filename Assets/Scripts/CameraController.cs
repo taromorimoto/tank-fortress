@@ -39,7 +39,7 @@ public class CameraController : MonoBehaviour {
 				auxRatio = 0;	
 			}
 			*/
-			print (rel.x + " / " + rel.z);
+			//print (rel.x + " / " + rel.z);
 		}
 	}
 	
