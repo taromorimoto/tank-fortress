@@ -17,14 +17,6 @@ public class BulletController : MonoBehaviour {
 		rigidbody.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
 	}
 	
-	public void Update () {
-        age -= Time.deltaTime;
-
-        if (age < 0) {
-            Destroy(gameObject);
-        }
-	}
-	
 	public void AddForce(Vector3 dir, float _charge) {
 		charge = _charge;
 		rigidbody.AddForce(dir * charge * bulletVelocity);
