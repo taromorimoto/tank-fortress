@@ -1176,8 +1176,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 4b0f2beab33ee4fb4a00fc1053fe0ffd, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: .400000006
+  m_PlayOnAwake: 0
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1286,6 +1286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageTextPrefab: {fileID: 100000, guid: ecc76fe2909e1400483d93cdec3060b2, type: 2}
   deathExplosionPrefab: {fileID: 100000, guid: dc533b4ca16d3cd4d94b4d9e8b3376f0, type: 2}
+  deathExplosionSound: {fileID: 8200008}
   healthBarSlider: {fileID: 0}
   health: 100
 --- !u!114 &11400010

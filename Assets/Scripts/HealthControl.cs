@@ -6,6 +6,7 @@ public class HealthControl : MonoBehaviour {
 
 	public GameObject damageTextPrefab;
 	public GameObject deathExplosionPrefab;
+	public AudioSource deathExplosionSound;
 	public Slider healthBarSlider;
 	public float health = 100.0f;
 
@@ -41,6 +42,8 @@ public class HealthControl : MonoBehaviour {
 			print ("Tank destroyed. Health:" + health);
 			GameObject.Destroy(gameObject, 2.0f);
 			Instantiate(deathExplosionPrefab, transform.position, transform.rotation);
+			if (!deathExplosionSound.isPlaying)
+				deathExplosionSound.Play();
 		}
 	}
 	
