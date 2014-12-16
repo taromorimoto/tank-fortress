@@ -16027,7 +16027,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: .274509817, b: 0, a: 1}
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8676d6d079974dd4b97e65aae13348e2, type: 3}
     m_FontSize: 30
@@ -33659,7 +33659,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1321081351
 RectTransform:
   m_ObjectHideFlags: 0
