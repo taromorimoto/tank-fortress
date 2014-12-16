@@ -8,6 +8,7 @@ public class CannonController : MonoBehaviour {
 	public Transform launchPoint;
 	public Transform mineLaunchPoint;
 	public Text bulletText;
+	public GameObject ammoSelectText;
 	public string[] bulletNames;
 	public GameObject[] bulletPrefabs;
 	public GameObject aimPrefab;
@@ -53,6 +54,10 @@ public class CannonController : MonoBehaviour {
 		
 		energySlider.gameObject.GetComponentInChildren<EnergySlider>().threshold = bulletComp.energyUse;
 		bulletText.text = bulletNames[bulletIndex];
+		
+		ammoSelectText.GetComponent<Text>().text = bulletNames[bulletIndex];
+		ammoSelectText.GetComponent<Timer>().Reset();
+		ammoSelectText.SetActive(true);
 	}
 	
 	void DestroyAim() {
