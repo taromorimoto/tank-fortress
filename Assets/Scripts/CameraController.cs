@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class CameraController : MonoBehaviour {
 
 	public float ratio = 1.0f;
 	public float minDist = 200.0f;
+	public GameObject brawlText;
 	
 	GameObject[] tanks;
 	Vector3 target;
@@ -22,6 +24,8 @@ public class CameraController : MonoBehaviour {
 		UpdateTarget();
 		driveInStartTime = Time.time;
 		driveInEndRot = transform.eulerAngles.x;
+		tanks[0].GetComponent<PlayerControl>().enabled = false;
+		tanks[1].GetComponent<PlayerControl>().enabled = false;
 	}
 	
 	void UpdateTarget() {
@@ -59,8 +63,9 @@ public class CameraController : MonoBehaviour {
 			if (t >= 1.0f) {
 				play = true;
 				print ("Camera drive in end.");
-				tanks[0].BroadcastMessage("BeginPlay");
-				tanks[1].BroadcastMessage("BeginPlay");
+				brawlText.SetActive(true);
+				tanks[0].GetComponent<PlayerControl>().enabled = true;
+				tanks[1].GetComponent<PlayerControl>().enabled = true;
 			}
 		}
 		
