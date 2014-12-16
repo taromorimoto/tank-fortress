@@ -3,13 +3,10 @@ using System.Collections;
 
 public class IntroScript : MonoBehaviour {
 
-	public AudioSource hitSound;
-	public float hitSoundPlayDelay = 2.0f;
 	public float reloadDelay = 0.0f;
 
 	// Use this for initialization
 	void Start () {
-		hitSound.PlayDelayed(hitSoundPlayDelay);
 	}
 	
 	// Update is called once per frame
