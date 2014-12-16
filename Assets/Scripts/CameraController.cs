@@ -10,10 +10,18 @@ public class CameraController : MonoBehaviour {
 	Vector3 target;
 	float dist;
 	float auxRatio = 1.0f;
+	bool play = false;
+	float driveInBeginPos = 1100.0f;
+	float driveInBeginRot = 85.0f;
+	float driveInEndRot;
+	float driveInDuration = 4.0f;
+	float driveInStartTime;
 	
 	void Start () {
 		tanks = GameObject.FindGameObjectsWithTag("Tank");
 		UpdateTarget();
+		driveInStartTime = Time.time;
+		driveInEndRot = transform.eulerAngles.x;
 	}
 	
 	void UpdateTarget() {
@@ -26,20 +34,9 @@ public class CameraController : MonoBehaviour {
 			float z = Mathf.Abs(rel.z);
 			
 			auxRatio = (z - x) / z;
-			if (auxRatio < 0)
+			if (auxRatio < 0) {
 				auxRatio = 0;
-			/*			
-			if (x > z) {
-				auxRatio = (x - z) / x;	
 			}
-			if (z > x) {
-				auxRatio = (z - x) / z;	
-			}
-			if (z == x) {
-				auxRatio = 0;	
-			}
-			*/
-			//print (rel.x + " / " + rel.z);
 		}
 	}
 	
@@ -51,9 +48,22 @@ public class CameraController : MonoBehaviour {
 			calculatedDist = minDist;
 		}
 		
-		Camera.main.transform.localPosition = new Vector3(0, 0, -calculatedDist);
+		if (play) {
+			Camera.main.transform.localPosition = new Vector3(0, 0, -calculatedDist);
+		} else {
+			float t = (Time.time - driveInStartTime) / driveInDuration;
+			Camera.main.transform.localPosition = new Vector3(0, 0, -Mathf.SmoothStep(driveInBeginPos, calculatedDist, t));
+			
+			transform.eulerAngles = new Vector3(Mathf.SmoothStep(driveInBeginRot, driveInEndRot, t), 0, 0);
+			
+			if (t >= 1.0f) {
+				play = true;
+				print ("Camera drive in end.");
+				tanks[0].BroadcastMessage("BeginPlay");
+				tanks[1].BroadcastMessage("BeginPlay");
+			}
+		}
 		
 		transform.position = target;
 	}
-
 }
