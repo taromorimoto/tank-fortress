@@ -11,7 +11,7 @@ public class GameOverManager : MonoBehaviour {
 	string winnerName = "";
 	string text = "";
 	bool win = false;
-	float waitForAnykey = 3.0f;
+	float waitForAnykey = 0.5f;
 	
 	void FixedUpdate () {
 		if (HasGameEnded()) {
@@ -36,7 +36,7 @@ public class GameOverManager : MonoBehaviour {
 	void Update() {
 		if (win) {
 			waitForAnykey -= Time.deltaTime;
-			if (waitForAnykey < 0 && Input.anyKeyDown) {
+			if (waitForAnykey < 0 && Input.GetKeyDown(KeyCode.Space)) {
 				spacePressed = true;
 			}
 		}
